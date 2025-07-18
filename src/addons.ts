@@ -38,3 +38,15 @@ export function isAlNum(c: string): boolean {
 
     return /^[a-z0-9]$/i.test(c);
 }
+
+/* check if a string range is strict palindrome */
+export function palindrome(str: string, l: number, r: number): boolean {
+    while (l < r) {
+        if (str[l] !== str[r])
+            return false;
+
+        ++l; --r;
+    }
+
+    return true;
+}
