@@ -1,4 +1,4 @@
-/* 658. find k closest elements */
+/* 658a. find k closest elements */
 // #: sliding window
 
 class src658 {
@@ -27,3 +27,5 @@ class src658 {
 }
 
 src658.main();
+
+// more sols at: https://neetcode.io/solutions/find-k-closest-elements
