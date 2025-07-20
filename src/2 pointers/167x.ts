@@ -1,7 +1,7 @@
-/* 167. 2 integer sum II */
+/* 167a. 2 integer sum II */
 // #: 2 pointers
 
-class src167 {
+class src167a {
     static twoSum(arr: number[], target: number): number[] {
         let l = 0, r = arr.length - 1;
 
@@ -25,9 +25,11 @@ class src167 {
         const target: number = 3;
 
         // 2 values summing to target
-        let ans: number[] = src167.twoSum(arr, target);
+        let ans: number[] = src167a.twoSum(arr, target);
         console.log(ans);
     }
 }
 
-src167.main();
+src167a.main();
+
+// more sols at: https://neetcode.io/solutions/two-sum-ii-input-array-is-sorted

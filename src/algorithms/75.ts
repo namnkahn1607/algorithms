@@ -1,5 +1,5 @@
 /* 75. sort colors */
-// #: algorithms
+// #: algorithms + array
 
 class src75 {
     /* Dutch National Flag algorithm */

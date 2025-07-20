@@ -1,5 +1,5 @@
 /* 912. sort an array */
-// #: array
+// #: algorithms + array
 
 class MergeSort {
     private static merge(arr: number[], low: number, mid: number, high: number): void {
