@@ -50,3 +50,51 @@ export function palindrome(str: string, l: number, r: number): boolean {
 
     return true;
 }
+
+/* binary search variants */
+export class BS {
+    public static iBS(arr: number[], l: number, r: number, target: number): number {
+        while (l <= r) {
+            const mid = l + Math.trunc((r - l) / 2);
+
+            if (arr[mid] < target)
+                l = mid + 1;
+            else if (arr[mid] > target)
+                r = mid - 1;
+            else
+                return mid;
+        }
+
+        return -1;
+    }
+
+    public static lowerBS(arr: number[], target: number): number {
+        let low = 0, high = arr.length;
+
+        while (low < high) {
+            const mid = low + Math.trunc((high - low) / 2);
+
+            if (arr[mid] < target)
+                low = mid + 1;
+            else
+                high = mid;
+        }
+
+        return low;
+    }
+
+    public static upperBS(arr: number[], target: number): number {
+        let low = 0, high = arr.length;
+
+        while (low < high) {
+            const mid = low + Math.trunc((high - low) / 2);
+
+            if (arr[mid] <= target)
+                low = mid + 1;
+            else
+                high = mid;
+        }
+
+        return -1;
+    }
+}
