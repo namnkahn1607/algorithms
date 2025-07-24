@@ -69,7 +69,7 @@ export class BS {
     }
 
     public static lowerBS(arr: number[], target: number): number {
-        let low = 0, high = arr.length;
+        let [low, high] = [0, arr.length];
 
         while (low < high) {
             const mid = low + Math.trunc((high - low) / 2);
@@ -84,7 +84,7 @@ export class BS {
     }
 
     public static upperBS(arr: number[], target: number): number {
-        let low = 0, high = arr.length;
+        let [low, high] = [0, arr.length];
 
         while (low < high) {
             const mid = low + Math.trunc((high - low) / 2);
