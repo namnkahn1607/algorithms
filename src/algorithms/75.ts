@@ -4,7 +4,8 @@
 class src75 {
     /* Dutch National Flag algorithm */
     static sortColors(colors: number[]): void {
-        let l = 0, r = colors.length - 1, i = 0;
+        let [l, r] = [0, colors.length - 1];
+        let i = 0;
 
         while (i <= r) {
             if (colors[i] < 1) {

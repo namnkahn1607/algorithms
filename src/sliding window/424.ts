@@ -7,8 +7,9 @@ class src424 {
         const m: number = str.length;
 
         const freq: number[] = new Array<number>(26).fill(0);
+        let l = 0;
         let mostFreq = 0;
-        let ans = 0, l = 0;
+        let ans = 0;
 
         for (let r = 0; r < m; ++r) {
             const x: number = str[r].charCodeAt(0) - base;

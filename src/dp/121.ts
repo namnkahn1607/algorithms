@@ -3,7 +3,7 @@
 
 class src121 {
     static maxProfit(prices: number[]): number {
-        let profit = 0, buy = prices[0];
+        let [profit, buy] = [0, prices[0]];
 
         for (const price of prices) {
             buy = Math.min(price, buy);

@@ -5,7 +5,7 @@ class src238 {
     static productExceptSelf(arr: number[]): number[] {
         const m: number = arr.length;
         const ans: number[] = new Array<number>(m).fill(1);
-        let prefix = 1, suffix = 1;
+        let [prefix, suffix] = [1, 1];
 
         for (let i = 1; i < m; ++i) {
             prefix *= arr[i - 1];

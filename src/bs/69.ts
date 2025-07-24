@@ -3,7 +3,7 @@
 
 class src69 {
     static mySqrt(x: number): number {
-        let low = 0, high = x;
+        let [low, high] = [0, x];
 
         while (low < high) {
             const mid = low + Math.trunc((high - low) / 2);

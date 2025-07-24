@@ -34,8 +34,7 @@ class UnionFind {
 
     // method.union
     public union(x: number, y: number): void {
-        const rx = this.root(x);
-        const ry = this.root(y);
+        const [rx, ry] = [this.root(x), this.root(y)];
 
         if (rx === ry) return;
 
@@ -70,8 +69,7 @@ class UnionFind {
         ];
 
         for (let i = 0; i < list.length; ++i) {
-            const x = list[i][0];
-            const y = list[i][1];
+            const [x, y] = [list[i][0], list[i][1]];
 
             if (uf.connected(x, y))
                 console.log(`${x} is already connected to ${y}`);

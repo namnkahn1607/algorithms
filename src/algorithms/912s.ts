@@ -3,8 +3,7 @@
 
 class MergeSort {
     private static merge(arr: number[], low: number, mid: number, high: number): void {
-        const a: number = mid - low + 1;
-        const b: number = high - mid;
+        const [a, b] = [mid - low + 1, high - mid];
 
         const left: number[] = new Array<number>(a);
         const right: number[] = new Array<number>(b);
@@ -14,8 +13,8 @@ class MergeSort {
 
         for (let j = 0; j < b; ++j)
             right[j] = arr[mid + 1 + j];
-
-        let i = 0, j = 0, k = low;
+        
+        let [i, j, k] = [0, 0, low];
 
         while (i < a && j < b) {
             if (left[i] <= right[j])

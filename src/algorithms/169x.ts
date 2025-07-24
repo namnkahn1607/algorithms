@@ -4,7 +4,7 @@
 class src169a {
     /* Boyer-Moore voting algorithm */
     static majorityElement(arr: number[]): number {
-        let candidate = arr[0], cnt = 0;
+        let [candidate, cnt] = [arr[0], 0];
 
         for (const a of arr) {
             if (cnt === 0)

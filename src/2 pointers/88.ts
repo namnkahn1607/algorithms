@@ -3,7 +3,7 @@
 
 class src88 {
     static merge(nums1: number[], m: number, nums2: number[], n: number): void {
-        let i = m - 1, j = n - 1, k = m + n - 1;
+        let [i, j, k] = [m - 1, n - 1, m + n - 1];
 
         while (i >= 0 && j >= 0) {
             if (nums1[i] >= nums2[j])
@@ -22,10 +22,8 @@ class src88 {
     public static main(): void {
         // add arrays
         const nums1: number[] = [10, 20, 20, 40];
-        const m: number = nums1.length;
-
         const nums2: number[] = [1, 2];
-        const n: number = nums2.length;
+        const [m, n] = [nums1.length, nums2.length];
 
         for (let i = 0; i < n; ++i)
             nums1.push(0);

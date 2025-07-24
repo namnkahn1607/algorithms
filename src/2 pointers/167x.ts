@@ -3,7 +3,7 @@
 
 class src167a {
     static twoSum(arr: number[], target: number): number[] {
-        let l = 0, r = arr.length - 1;
+        let [l, r] = [0, arr.length - 1];
 
         while (l < r) {
             const sum: number = arr[l] + arr[r];

@@ -4,8 +4,7 @@
 class src122 {
     static maxProfit(prices: number[]): number {
         const m: number = prices.length;
-        let profit = 0,
-            buy = prices[0];
+        let [profit, buy] = [0, prices[0]];
 
         for (let i = 0; i < m - 1; ++i) {
             if (prices[i] > prices[i + 1]) {

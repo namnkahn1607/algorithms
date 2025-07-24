@@ -54,7 +54,10 @@ class MinStack {
                     break;
 
                 case "push":
-                    fig!.push(args[++i]);
+                    if (typeof args[i] === "string")
+                        throw new Error("malformed operations");
+
+                    fig!.push(<number>args[i]);
                     ans.push("null");
                     break;
 

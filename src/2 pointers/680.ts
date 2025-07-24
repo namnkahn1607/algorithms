@@ -4,7 +4,7 @@ import { palindrome } from "../addons";
 
 class src680 {
     static validPalindrome(str: string): boolean {
-        let l = 0, r = str.length - 1;
+        let [l, r] = [0, str.length - 1];
 
         while (l < r) {
             if (str[l] !== str[r])

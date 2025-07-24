@@ -4,7 +4,9 @@
 class src209 {
     static minSubArrayLen(target: number, arr: number[]): number {
         const m: number = arr.length;
-        let l = 0, ans = m + 1, sum = 0;
+        let l = 0;
+        let ans = m + 1;
+        let sum = 0;
 
         for (let r = 0; r < m; ++r) {
             sum += arr[r];

@@ -15,7 +15,7 @@ class GuessGame {
     }
 
     public guessNum(n: number): number {
-        let low = 0, high = n;
+        let [low, high] = [0, n];
 
         while (low <= high) {
             const mid = low + Math.trunc((high - low) / 2);

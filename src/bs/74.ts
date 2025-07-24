@@ -4,10 +4,9 @@ import { BS } from "../addons";
 
 class src74 {
     static searchMatrix(mat: number[][], target: number): boolean {
-        const row: number = mat.length;
-        const col: number = mat[0].length;
+        const [row, col] = [mat.length, mat[0].length];
 
-        let low = 0, high = row;
+        let [low, high] = [0, row];
 
         while (low < high) {
             const mid = low + Math.trunc((high - low) / 2);
