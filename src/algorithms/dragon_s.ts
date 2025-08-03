@@ -1,13 +1,13 @@
 /* algorithms by Kevin Wayne & Robert Sedgewick */
 // #: dp
 
-class Dragon_s {
+class Dragon {
     static dragonCurve(order: number, reverse: boolean): string {
         if (order === 0) return "F";
 
-        return this.dragonCurve(order - 1, false) +
+        return Dragon.dragonCurve(order - 1, false) +
             ((reverse) ? "R" : "L") +
-            this.dragonCurve(order - 1, true);
+            Dragon.dragonCurve(order - 1, true);
     }
 
     public static main(): void {
@@ -16,8 +16,8 @@ class Dragon_s {
 
         // instruction to achieve that dragon curve
         for (const order of orders)
-            console.log(Dragon_s.dragonCurve(order, false));
+            console.log(Dragon.dragonCurve(order, false));
     }
 }
 
-Dragon_s.main();
+Dragon.main();

@@ -36,10 +36,10 @@ class MergeSort {
 
         const mid: number = low + Math.trunc((high - low) / 2);
 
-        this.sort(arr, low, mid);
-        this.sort(arr, mid + 1, high);
+        MergeSort.sort(arr, low, mid);
+        MergeSort.sort(arr, mid + 1, high);
 
-        this.merge(arr, low, mid, high);
+        MergeSort.merge(arr, low, mid, high);
     }
 }
 

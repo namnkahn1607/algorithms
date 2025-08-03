@@ -15,9 +15,9 @@ class src704 {
         const mid = l + Math.trunc((r - l) / 2);
 
         if (arr[mid] < target)
-            return this.rBS(arr, mid + 1, r, target);
+            return src704.rBS(arr, mid + 1, r, target);
         else if (arr[mid] > target)
-            return this.rBS(arr, l, mid - 1, target);
+            return src704.rBS(arr, l, mid - 1, target);
         else
             return mid;
     }
