@@ -3,7 +3,7 @@
 import { BS } from "../addons";
 
 class src35 {
-    static searchInsert(arr: number[], target: number): number {
+    searchInsert(arr: number[], target: number): number {
         return BS.lowerBS(arr, target);
     }
 
@@ -13,7 +13,7 @@ class src35 {
         const target: number = 5;
 
         // search for insert pos
-        let ans: number = src35.searchInsert(arr, target);
+        let ans: number = new src35().searchInsert(arr, target);
         console.log(ans);
     }
 }

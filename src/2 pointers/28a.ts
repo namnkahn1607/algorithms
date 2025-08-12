@@ -2,7 +2,7 @@
 // #: 2 pointers
 
 class src28a {
-    static strStr(haystack: string, needle: string): number {
+    strStr(haystack: string, needle: string): number {
         const m: number = haystack.length;
         const n: number = needle.length;
         let [i, j] = [0, 0];
@@ -30,7 +30,7 @@ class src28a {
         const needle: string = "neet";
 
         // check if needle exist within haystack
-        let ans: number = src28a.strStr(haystack, needle);
+        let ans: number = new src28a().strStr(haystack, needle);
         console.log(ans);
     }
 }

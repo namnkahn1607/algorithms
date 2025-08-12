@@ -2,7 +2,7 @@
 // #: sliding window
 
 class src219 {
-    static containsNearbyDuplicate(arr: number[], k: number): boolean {
+    containsNearbyDuplicate(arr: number[], k: number): boolean {
         const m: number = arr.length;
         const set = new Set<number>();
         let l = 0;
@@ -26,7 +26,7 @@ class src219 {
         const k: number = 3;
 
         // check for duplication within range k
-        let ans: boolean = src219.containsNearbyDuplicate(arr, k);
+        let ans: boolean = new src219().containsNearbyDuplicate(arr, k);
         console.log((ans) ? "true" : "false");
     }
 }

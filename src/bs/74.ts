@@ -3,7 +3,7 @@
 import { BS } from "../addons";
 
 class src74 {
-    static searchMatrix(mat: number[][], target: number): boolean {
+    searchMatrix(mat: number[][], target: number): boolean {
         const [row, col] = [mat.length, mat[0].length];
 
         let [low, high] = [0, row];
@@ -35,7 +35,7 @@ class src74 {
         const target: number = 30;
 
         // check if target within matrix
-        let ans: boolean = src74.searchMatrix(mat, target);
+        let ans: boolean = new src74().searchMatrix(mat, target);
         console.log((ans) ? "true" : "false");
     }
 }

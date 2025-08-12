@@ -2,14 +2,7 @@
 // #: 2 pointers
 
 class src189 {
-    private static reverseArray(arr: number[], l: number, r: number): void {
-        while (l < r) {
-            [arr[l], arr[r]] = [arr[r], arr[l]];
-            ++l; --r;
-        }
-    }
-
-    static rotate(arr: number[], k: number): void {
+    rotate(arr: number[], k: number): void {
         const m: number = arr.length;
 
         k %= m;
@@ -19,13 +12,20 @@ class src189 {
         arr.reverse();
     }
 
+    private reverseArray(arr: number[], l: number, r: number): void {
+        while (l < r) {
+            [arr[l], arr[r]] = [arr[r], arr[l]];
+            ++l; --r;
+        }
+    }
+
     public static main(): void {
         // add array & steps
         const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
         const k: number = 3;
 
         // rotate right by k steps
-        src189.rotate(arr, k);
+        new src189().rotate(arr, k);
         console.log(arr.join(" "));
     }
 }

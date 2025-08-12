@@ -2,7 +2,7 @@
 // #: stack
 
 class src150 {
-    static evaluateRPN(tokens: string[]): number {
+    evaluateRPN(tokens: string[]): number {
         const args: number[] = [];
 
         for (const token of tokens) {
@@ -48,7 +48,7 @@ class src150 {
         const tokens: string[] = ["1", "2", "+", "3", "*", "4", "-"];
 
         // evaluate RPN
-        let ans: number = src150.evaluateRPN(tokens);
+        let ans: number = new src150().evaluateRPN(tokens);
         console.log(ans);
     }
 }

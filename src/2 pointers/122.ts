@@ -2,7 +2,7 @@
 // #: 2 pointers
 
 class src122 {
-    static maxProfit(prices: number[]): number {
+    maxProfit(prices: number[]): number {
         const m: number = prices.length;
         let [profit, buy] = [0, prices[0]];
 
@@ -23,7 +23,7 @@ class src122 {
         const prices: number[] = [7, 1, 5, 3, 6, 4];
 
         // calculate maxima profit gained
-        let ans: number = src122.maxProfit(prices);
+        let ans: number = new src122().maxProfit(prices);
         console.log(ans);
     }
 }

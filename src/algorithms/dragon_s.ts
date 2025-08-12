@@ -2,12 +2,12 @@
 // #: dp
 
 class Dragon {
-    static dragonCurve(order: number, reverse: boolean): string {
+    dragonCurve(order: number, reverse: boolean): string {
         if (order === 0) return "F";
 
-        return Dragon.dragonCurve(order - 1, false) +
+        return this.dragonCurve(order - 1, false) +
             ((reverse) ? "R" : "L") +
-            Dragon.dragonCurve(order - 1, true);
+            this.dragonCurve(order - 1, true);
     }
 
     public static main(): void {
@@ -16,7 +16,7 @@ class Dragon {
 
         // instruction to achieve that dragon curve
         for (const order of orders)
-            console.log(Dragon.dragonCurve(order, false));
+            console.log(new Dragon().dragonCurve(order, false));
     }
 }
 

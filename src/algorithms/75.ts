@@ -3,7 +3,7 @@
 
 class src75 {
     /* Dutch National Flag algorithm */
-    static sortColors(colors: number[]): void {
+    sortColors(colors: number[]): void {
         let [l, r] = [0, colors.length - 1];
         let i = 0;
 
@@ -25,7 +25,7 @@ class src75 {
         const colors: number[] = [2, 0, 1, 0, 2, 2, 1, 0];
 
         // rearrange color in correct order
-        src75.sortColors(colors);
+        new src75().sortColors(colors);
         console.log(colors.join(" "));
     }
 }

@@ -2,7 +2,7 @@
 // #: array + prefix/suffix
 
 class src560 {
-    static subarraySum(arr: number[], k: number): number {
+    subarraySum(arr: number[], k: number): number {
         const map = new Map<number, number>([[0, 1]]);
         let prefix = 0, ans = 0;
 
@@ -23,7 +23,7 @@ class src560 {
         const k: number = 2;
 
         // calculate number of satisfied subarray
-        let ans: number = src560.subarraySum(arr, k);
+        let ans: number = new src560().subarraySum(arr, k);
         console.log(ans);
     }
 }

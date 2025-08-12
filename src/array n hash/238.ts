@@ -2,7 +2,7 @@
 // #: array + prefix/suffix
 
 class src238 {
-    static productExceptSelf(arr: number[]): number[] {
+    productExceptSelf(arr: number[]): number[] {
         const m: number = arr.length;
         const ans: number[] = new Array<number>(m).fill(1);
         let [prefix, suffix] = [1, 1];
@@ -25,7 +25,7 @@ class src238 {
         const arr: number[] = [-1, 0, 1, 2, 3];
 
         // calculate product for each pos
-        let ans: number[] = src238.productExceptSelf(arr);
+        let ans: number[] = new src238().productExceptSelf(arr);
         console.log(ans.join(" "));
     }
 }

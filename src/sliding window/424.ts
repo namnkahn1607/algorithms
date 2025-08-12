@@ -2,7 +2,7 @@
 // #: sliding window + hash
 
 class src424 {
-    static characterReplacement(str: string, k: number): number {
+    characterReplacement(str: string, k: number): number {
         const base: number = 'A'.charCodeAt(0);
         const m: number = str.length;
 
@@ -32,7 +32,7 @@ class src424 {
         const k: number = 2;
 
         // calculate maxima length k-pos-replaced string
-        let ans: number = src424.characterReplacement(str, k);
+        let ans: number = new src424().characterReplacement(str, k);
         console.log(ans);
     }
 }

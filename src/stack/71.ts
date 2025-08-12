@@ -2,7 +2,7 @@
 // #: stack
 
 class src71 {
-    static simplifyPath(path: string): string {
+    simplifyPath(path: string): string {
         const files: string[] = [];
         let name: string = "";
 
@@ -35,7 +35,7 @@ class src71 {
         const path: string = "/..//_home/a/b/..///";
 
         // canonically simplify the directory
-        let ans: string = src71.simplifyPath(path);
+        let ans: string = new src71().simplifyPath(path);
         console.log(ans);
     }
 }

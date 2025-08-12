@@ -2,7 +2,7 @@
 // #: 2 pointers + dp
 
 class src246a {
-    static asteroidCollision(astr: number[]): number[] {
+    asteroidCollision(astr: number[]): number[] {
         let i = -1;
 
         for (let a of astr) {
@@ -32,7 +32,7 @@ class src246a {
         const astr: number[] = [2, 4, -4, -1];
 
         // asteroids remaining
-        let ans: number[] = src246a.asteroidCollision(astr);
+        let ans: number[] = new src246a().asteroidCollision(astr);
         console.log(ans.join(" "));
     }
 }

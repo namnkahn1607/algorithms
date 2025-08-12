@@ -2,7 +2,7 @@
 // #: stack
 
 class src20 {
-    static isValid(str: string): boolean {
+    isValid(str: string): boolean {
         const stack: string[] = [];
         const map = new Map<string, string>([
             [")", "("], ["]", "["], ["}", "{"]
@@ -29,7 +29,7 @@ class src20 {
         const str: string = "(){[]}";
 
         // check if valid parentheses string
-        let ans: boolean = src20.isValid(str);
+        let ans: boolean = new src20().isValid(str);
         console.log((ans) ? "true" : "false");
     }
 }

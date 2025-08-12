@@ -2,7 +2,7 @@
 // #: sliding window + hash
 
 class src3 {
-    static lengthOfLongestSubstring(str: string): number {
+    lengthOfLongestSubstring(str: string): number {
         const m: number = str.length;
         const map = new Map<string, number>();
         let l = 0, ans = 0;
@@ -23,7 +23,7 @@ class src3 {
         const str: string = "zxyzyxz";
 
         // maxima length substring of non-repeating chars
-        let ans: number = src3.lengthOfLongestSubstring(str);
+        let ans: number = new src3().lengthOfLongestSubstring(str);
         console.log(ans);
     }
 }

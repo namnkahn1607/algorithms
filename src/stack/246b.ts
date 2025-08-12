@@ -2,7 +2,7 @@
 // #: stack
 
 class src246b {
-    static asteroidCollision(astr: number[]): number[] {
+    asteroidCollision(astr: number[]): number[] {
         const stack: number[] = [];
 
         for (let a of astr) {
@@ -32,7 +32,7 @@ class src246b {
         const astr: number[] = [2, 4, -4, -1];
 
         // asteroids remaining
-        let ans: number[] = src246b.asteroidCollision(astr);
+        let ans: number[] = new src246b().asteroidCollision(astr);
         console.log(ans.join(" "));
     }
 }

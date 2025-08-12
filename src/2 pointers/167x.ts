@@ -2,7 +2,7 @@
 // #: 2 pointers
 
 class src167a {
-    static twoSum(arr: number[], target: number): number[] {
+    twoSum(arr: number[], target: number): number[] {
         let [l, r] = [0, arr.length - 1];
 
         while (l < r) {
@@ -25,7 +25,7 @@ class src167a {
         const target: number = 3;
 
         // 2 values summing to target
-        let ans: number[] = src167a.twoSum(arr, target);
+        let ans: number[] = new src167a().twoSum(arr, target);
         console.log(ans);
     }
 }

@@ -2,7 +2,7 @@
 // #: bs
 
 class src69 {
-    static mySqrt(x: number): number {
+    mySqrt(x: number): number {
         let [low, high] = [0, x];
 
         while (low < high) {
@@ -22,7 +22,7 @@ class src69 {
         const num: number = 2;
 
         // calculate square root of number
-        let ans: number = src69.mySqrt(num);
+        let ans: number = new src69().mySqrt(num);
         console.log(ans);
     }
 }

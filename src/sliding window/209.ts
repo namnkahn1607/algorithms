@@ -2,7 +2,7 @@
 // #: sliding window
 
 class src209 {
-    static minSubArrayLen(target: number, arr: number[]): number {
+    minSubArrayLen(target: number, arr: number[]): number {
         const m: number = arr.length;
         let l = 0;
         let ans = m + 1;
@@ -26,7 +26,7 @@ class src209 {
         const target: number = 10;
 
         // calculate the shortest satisfied subarray
-        let ans: number = src209.minSubArrayLen(target, arr);
+        let ans: number = new src209().minSubArrayLen(target, arr);
         console.log(ans);
     }
 }

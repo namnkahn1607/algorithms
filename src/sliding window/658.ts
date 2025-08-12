@@ -2,7 +2,7 @@
 // #: sliding window
 
 class src658 {
-    static findClosestElements(arr: number[], k: number, x: number): number[] {
+    findClosestElements(arr: number[], k: number, x: number): number[] {
         const m: number = arr.length;
         let l = 0;
 
@@ -21,7 +21,7 @@ class src658 {
         const x: number = 6;
 
         // find k closest values to x
-        let ans: number[] = src658.findClosestElements(arr, k, x);
+        let ans: number[] = new src658().findClosestElements(arr, k, x);
         console.log(ans.join(" "));
     }
 }

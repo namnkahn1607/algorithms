@@ -2,7 +2,7 @@
 // #: 2 pointers
 
 class src26 {
-    static removeDuplicates(arr: number[]): number {
+    removeDuplicates(arr: number[]): number {
         const m: number = arr.length;
         let left = 1;
 
@@ -19,7 +19,7 @@ class src26 {
         const arr: number[] = [2, 10, 10, 40, 40, 40];
 
         // gathers non-duplicates to the left
-        let left: number = src26.removeDuplicates(arr);
+        let left: number = new src26().removeDuplicates(arr);
         const ans: number[] = [];
 
         for (let i = 0; i < left; ++i)

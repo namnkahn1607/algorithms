@@ -2,7 +2,7 @@
 // #: 2 pointers + dp
 
 class src739b {
-    static dailyTemperatures(tmps: number[]): number[] {
+    dailyTemperatures(tmps: number[]): number[] {
         const m: number = tmps.length;
 
         const ans = new Array<number>(m).fill(0);
@@ -29,7 +29,7 @@ class src739b {
         const tmps: number[] = [30, 38, 30, 36, 35, 40, 28];
 
         // calculate wait time until warmer day
-        let ans: number[] = src739b.dailyTemperatures(tmps);
+        let ans: number[] = new src739b().dailyTemperatures(tmps);
         console.log(ans.join(" "));
     }
 }

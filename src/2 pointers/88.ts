@@ -2,7 +2,7 @@
 // #: 2 pointers
 
 class src88 {
-    static merge(nums1: number[], m: number, nums2: number[], n: number): void {
+    merge(nums1: number[], m: number, nums2: number[], n: number): void {
         let [i, j, k] = [m - 1, n - 1, m + n - 1];
 
         while (i >= 0 && j >= 0) {
@@ -29,7 +29,7 @@ class src88 {
             nums1.push(0);
 
         // merge 2 sorted arrays into one
-        src88.merge(nums1, m, nums2, n);
+        new src88().merge(nums1, m, nums2, n);
 
         console.log(nums1.join(" "));
     }

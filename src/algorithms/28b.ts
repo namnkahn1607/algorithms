@@ -3,7 +3,7 @@
 
 class src28b {
     /* Knuth-Morris-Pratt algorithm */
-    static strStr(haystack: string, needle: string): number {
+    strStr(haystack: string, needle: string): number {
         if (needle === "") return 0;
 
         const m: number = haystack.length;
@@ -47,7 +47,7 @@ class src28b {
         const needle: string = "neet";
 
         // search for needle within haystack
-        let ans: number = src28b.strStr(haystack, needle);
+        let ans: number = new src28b().strStr(haystack, needle);
         console.log(ans);
     }
 }

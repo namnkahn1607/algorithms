@@ -3,7 +3,7 @@
 import { palindrome } from "../addons";
 
 class src680 {
-    static validPalindrome(str: string): boolean {
+    validPalindrome(str: string): boolean {
         let [l, r] = [0, str.length - 1];
 
         while (l < r) {
@@ -21,7 +21,7 @@ class src680 {
         const str: string = "abbdba";
 
         // check if almost palindrome
-        let ans: boolean = src680.validPalindrome(str);
+        let ans: boolean = new src680().validPalindrome(str);
         console.log((ans) ? "true" : "false");
     }
 }

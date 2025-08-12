@@ -2,7 +2,7 @@
 // #: dp
 
 class src121 {
-    static maxProfit(prices: number[]): number {
+    maxProfit(prices: number[]): number {
         let [profit, buy] = [0, prices[0]];
 
         for (const price of prices) {
@@ -19,7 +19,7 @@ class src121 {
         const prices: number[] = [10, 1, 5, 6, 7, 1];
 
         // calculate maxima profit within one transaction
-        let ans = src121.maxProfit(prices);
+        let ans = new src121().maxProfit(prices);
         console.log(ans);
     }
 }
