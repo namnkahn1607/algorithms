@@ -3,20 +3,19 @@
 
 class src189 {
     rotate(arr: number[], k: number): void {
-        const m: number = arr.length;
+        const reverseArray = function(l: number, r: number): void {
+            while (l < r) {
+                [arr[l], arr[r]] = [arr[r], arr[l]];
+                ++l; --r
+            }
+        }
 
+        const m: number = arr.length;
         k %= m;
 
-        this.reverseArray(arr, 0, m - k - 1);
-        this.reverseArray(arr, m - k, m - 1);
+        reverseArray(0, m - k - 1);
+        reverseArray(m - k, m - 1);
         arr.reverse();
-    }
-
-    private reverseArray(arr: number[], l: number, r: number): void {
-        while (l < r) {
-            [arr[l], arr[r]] = [arr[r], arr[l]];
-            ++l; --r;
-        }
     }
 
     public static main(): void {

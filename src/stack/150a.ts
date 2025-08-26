@@ -1,7 +1,7 @@
 /* 150a. evaluate reverse polish notation */
 // #: stack
 
-class src150 {
+class src150a {
     evaluateRPN(tokens: string[]): number {
         const args: number[] = [];
 
@@ -48,11 +48,11 @@ class src150 {
         const tokens: string[] = ["1", "2", "+", "3", "*", "4", "-"];
 
         // evaluate RPN
-        let ans: number = new src150().evaluateRPN(tokens);
+        let ans: number = new src150a().evaluateRPN(tokens);
         console.log(ans);
     }
 }
 
-src150.main();
+src150a.main();
 
 // more sols at: https://neetcode.io/solutions/evaluate-reverse-polish-notation

@@ -8,7 +8,7 @@ class StockSpanner {
         this.stack = new Array<[number, number]>();
     }
 
-    public next(price: number): number {
+    next(price: number): number {
         let span = 1, len = this.stack.length;
 
         while (len > 0 && price >= this.stack[len - 1][0]) {

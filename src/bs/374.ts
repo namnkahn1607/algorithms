@@ -14,7 +14,7 @@ class GuessGame {
         return 0;
     }
 
-    public guessNum(n: number): number {
+    guessNum(n: number): number {
         let [low, high] = [0, n];
 
         while (low <= high) {

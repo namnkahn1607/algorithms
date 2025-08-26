@@ -1,16 +1,19 @@
 /* 933. number of recent calls */
 // #: queue
+import { Queue } from "datastructures-js";
 
 class RecentCounter {
-    constructor(private queue: number[] = [], private i: number = 0) {}
+    constructor(private queue: Queue<number> = new Queue()) {}
 
-    public ping(t: number): number {
-        this.queue.push(t);
+    ping(t: number): number {
+        const refQueue = this.queue;
 
-        while (this.i < this.queue.length && this.queue[this.i] + 3000 < t)
-            ++this.i;
+        refQueue.push(t);
 
-        return this.queue.length - this.i;
+        while (!refQueue.isEmpty() && refQueue.front() + 3000 < t)
+            refQueue.pop();
+
+        return refQueue.size();
     }
 
     public static main(): void {

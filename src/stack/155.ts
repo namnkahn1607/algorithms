@@ -4,7 +4,7 @@
 class MinStack {
     constructor(private readonly stack: number[] = [], private min: number = Number.MAX_VALUE) {}
 
-    public push(val: number): void {
+    push(val: number): void {
         if (this.stack.length === 0)
             this.stack.push(0);
         else
@@ -13,7 +13,7 @@ class MinStack {
         this.min = Math.min(this.min, val);
     }
 
-    public pop(): void {
+    pop(): void {
         const top = this.stack[this.stack.length - 1];
 
         if (top < 0)
@@ -25,13 +25,13 @@ class MinStack {
             this.min = Number.MAX_VALUE;
     }
 
-    public top(): number {
+    top(): number {
         const top = this.stack[this.stack.length - 1];
 
         return (top < 0) ? this.min : this.min + top;
     }
 
-    public getMin(): number {
+    getMin(): number {
         return this.min;
     }
 
