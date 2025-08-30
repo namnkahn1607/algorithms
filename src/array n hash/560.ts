@@ -19,8 +19,8 @@ class src560 {
 
     public static main(): void {
         // add array & k
-        const arr: number[] = [2, -1, 1, 2];
-        const k: number = 2;
+        const arr: number[] = [10, 5, 3, -2];
+        const k: number = 8;
 
         // calculate number of satisfied subarray
         let ans: number = new src560().subarraySum(arr, k);

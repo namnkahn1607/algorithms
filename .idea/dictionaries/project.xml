@@ -2,7 +2,9 @@
   <dictionary name="project">
     <words>
       <w>astr</w>
+      <w>fibo</w>
       <w>tmps</w>
+      <w>tribo</w>
     </words>
   </dictionary>
 </component>

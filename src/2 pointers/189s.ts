@@ -8,7 +8,7 @@ class src189 {
                 [arr[l], arr[r]] = [arr[r], arr[l]];
                 ++l; --r
             }
-        }
+        };
 
         const m: number = arr.length;
         k %= m;
