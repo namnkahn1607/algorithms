@@ -1,32 +1,31 @@
-/* 219. contains duplicate II */
-// #: sliding window
+/* 219. contains duplicate 2 */
+// #: sliding window + hash
 
 class src219 {
     containsNearbyDuplicate(arr: number[], k: number): boolean {
-        const m: number = arr.length;
         const set = new Set<number>();
-        let l = 0;
+        let L = 0;
 
-        for (let r = 0; r < m; ++r) {
-            if (r - l > k)
-                ++l;
+        for (let R = 0; R < arr.length; ++R) {
+            set.add(arr[R]);
 
-            if (set.has(arr[r]))
+            if (set.size < R - L + 1)
                 return true;
 
-            set.add(arr[r]);
+            if (R - L >= k)
+                set.delete(arr[L++]);
         }
 
         return false;
     }
 
     public static main(): void {
-        // add array & k
-        const arr: number[] = [1, 2, 3, 1];
-        const k: number = 3;
+        // add arr & k
+        const arr: number[] = [1, 2, 3, 1, 2, 3];
+        const k: number = 2;
 
-        // check for duplication within range k
-        let ans: boolean = new src219().containsNearbyDuplicate(arr, k);
+        // check if duplicate within range k
+        let ans = new src219().containsNearbyDuplicate(arr, k);
         console.log((ans) ? "true" : "false");
     }
 }

@@ -1,18 +1,18 @@
-/* 3. longest substring without repeating character */
-// #: sliding window + hash
+/* 3. longest substr without repeating characters */
+// #: sliding window
 
 class src3 {
     lengthOfLongestSubstring(str: string): number {
-        const m: number = str.length;
         const map = new Map<string, number>();
-        let l = 0, ans = 0;
+        let [ans, L] = [0, 0];
 
-        for (let r = 0; r < m; ++r) {
-            if (map.has(str[r]))
-                l = Math.max(l, map.get(str[r])! + 1);
+        for (let R = 0; R < str.length; ++R) {
+            if (map.has(str[R]))
+                L = Math.max(L, map.get(str[R])! + 1);
 
-            map.set(str[r], r);
-            ans = Math.max(ans, r - l + 1);
+            map.set(str[R], R);
+
+            ans = Math.max(ans, R - L + 1);
         }
 
         return ans;
@@ -20,9 +20,9 @@ class src3 {
 
     public static main(): void {
         // add string
-        const str: string = "zxyzyxz";
+        const str: string = "zxyzzxyz";
 
-        // maxima length substring of non-repeating chars
+        // calculate maxima distinct substr size
         let ans: number = new src3().lengthOfLongestSubstring(str);
         console.log(ans);
     }
