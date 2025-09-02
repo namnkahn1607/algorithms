@@ -1,23 +1,51 @@
 /* 1137. n-th tribonacci number */
-// #: dp + memoization
+// #: dp
 
 class src1137 {
+    // 1. dp (top down)
     tribonacci(n: number): number {
-        const memo = new Array<number>(n + 1).fill(-1);
+        const cache = new Array<number>(n + 1).fill(-1);
 
         const calcTrib = function(i: number): number {
             if (i <= 1) return i;
             if (i === 2) return 1;
 
-            if (memo[i] !== -1)
-                return memo[i];
+            if (cache[i] !== -1)
+                return cache[i];
 
-            memo[i] = calcTrib(i - 1) + calcTrib(i - 2) + calcTrib(i - 3);
+            cache[i] = calcTrib(i - 1) + calcTrib(i - 2) + calcTrib(i - 3);
 
-            return memo[i];
+            return cache[i];
         };
 
         return calcTrib(n);
+    }
+
+    // 2. dp (bottom up)
+    tribonacci2(n: number): number {
+        const dp = [0, 1, 1];
+
+        if (n < 3) return dp[n];
+
+        for (let i = 3; i <= n; ++i) {
+            const [tmp1, tmp2] = [dp[1], dp[2]];
+            dp[2] += (dp[0] + dp[1]);
+            [dp[0], dp[1]] = [tmp1, tmp2];
+        }
+
+        return dp[2];
+    }
+
+    // 3. dp (space-optimized)
+    tribonacci3(n: number): number {
+        const dp = [0, 1, 1];
+
+        if (n < 3) return dp[n];
+
+        for (let i = 3; i <= n; ++i)
+            dp[i % 3] = dp[0] + dp[1] + dp[2];
+
+        return dp[n % 3];
     }
 
     public static main(): void {
@@ -25,11 +53,14 @@ class src1137 {
         const n: number = 12;
 
         // calculate n-th tribo
-        let ans: number = new src1137().tribonacci(n);
-        console.log(ans);
+        const solution = new src1137();
+
+        let [ans1, ans2, ans3] = [
+            solution.tribonacci(n), solution.tribonacci2(n), solution.tribonacci3(n)
+        ];
+
+        console.log(ans1, ans2, ans3);
     }
 }
 
 src1137.main();
-
-// more sols at: https://neetcode.io/solutions/n-th-tribonacci-number
