@@ -5,22 +5,21 @@ class src78 {
     // 1. recursion
     subsets(nums: number[]): number[][] {
         const ans: number[][] = [];
-        const subset: number[] = [];
 
-        const dfs = function(i: number): void {
+        const dfs = function(i: number, subset: number[]): void {
             if (i >= nums.length) {
                 ans.push([...subset]);
                 return;
             }
 
             subset.push(nums[i]);
-            dfs(i + 1);
+            dfs(i + 1, subset);
 
             subset.pop();
-            dfs(i + 1);
+            dfs(i + 1, subset);
         };
 
-        dfs(0);
+        dfs(0, []);
 
         return ans;
     }
