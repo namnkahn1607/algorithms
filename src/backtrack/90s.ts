@@ -3,7 +3,7 @@
 
 class src90 {
     subsetsWithDup(nums: number[]): number[][] {
-        nums.sort();
+        nums.sort((a, b) => a - b);
 
         const ans: number[][] = [];
 
