@@ -16,8 +16,8 @@ class dfsMatrix {
             grid[r][c] = 1;
             let count = 0;
 
-            for (const [x, y] of dirs)
-                count += dfs(r + x, c + y);
+            for (const [dr, dc] of dirs)
+                count += dfs(r + dr, c + dc);
 
             grid[r][c] = 0;
             return count;
