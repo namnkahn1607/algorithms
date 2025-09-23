@@ -1,4 +1,4 @@
-/* algorithms: BFS matrix */
+/* algorithms: Graph - BFS matrix */
 
 import { Queue } from "datastructures-js";
 
@@ -40,7 +40,7 @@ class bfsMatrix {
 
     public static main(): void {
         // add matrix
-        const grid = [
+        const grid: number[][] = [
             [0, 0, 0, 0],
             [1, 1, 0, 0],
             [0, 0, 0, 1],

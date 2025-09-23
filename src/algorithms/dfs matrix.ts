@@ -1,4 +1,4 @@
-/* algorithms: DFS Matrix */
+/* algorithms: Graph - DFS Matrix */
 
 class dfsMatrix {
     countPaths(grid: number[][]): number {

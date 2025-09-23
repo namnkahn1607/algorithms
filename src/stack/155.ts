@@ -2,7 +2,10 @@
 // #: stack
 
 class MinStack {
-    constructor(private readonly stack: number[] = [], private min: number = Number.MAX_VALUE) {}
+    constructor(
+        private readonly stack: number[] = [],
+        private min: number = Number.MAX_VALUE
+    ) {}
 
     push(val: number): void {
         if (this.stack.length === 0)
@@ -36,28 +39,21 @@ class MinStack {
     }
 
     public static main(): void {
-        // add operations & create MinStack
-        let fig: MinStack | null = null;
-        const args: (string | number)[] = [
-            "MinStack", "push", 1, "push", 2, "push", 0, "getMin", "pop", "top", "getMin"
+        // add arguments & commands
+        const args: number[] = [1, 2, 0];
+
+        const cmds: string[] = [
+            "push", "push", "push", "getMin", "pop", "top", "getMin"
         ];
 
-        // apply operations on MinStack
-        const m: number = args.length;
+        // initialize MinStack & operate
+        const fig = new MinStack();
         const ans: string[] = [];
 
-        for (let i = 0; i < m; ++i) {
-            switch (args[i]) {
-                case "MinStack":
-                    fig = new MinStack();
-                    ans.push("null");
-                    break;
-
+        for (let i = 0; i < args.length; ++i) {
+            switch (cmds[i]) {
                 case "push":
-                    if (typeof args[i] === "string")
-                        throw new Error("malformed operations");
-
-                    fig!.push(<number>args[i]);
+                    fig.push(args[i]);
                     ans.push("null");
                     break;
 
@@ -67,11 +63,11 @@ class MinStack {
                     break;
 
                 case "top":
-                    ans.push(String(fig!.top()));
+                    ans.push(String(fig.top()));
                     break;
 
                 case "getMin":
-                    ans.push(String(fig!.getMin()));
+                    ans.push(String(fig.getMin()));
                     break;
             }
         }
