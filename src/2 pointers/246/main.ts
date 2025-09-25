@@ -1,6 +1,6 @@
 /* 246. asteroid collision */
 
-export abstract class AsteroidCollision {
+abstract class AsteroidCollision {
     abstract asteroidCollision(astr: number[]): number[];
 
     public static run(sol: AsteroidCollision): void {
@@ -8,3 +8,5 @@ export abstract class AsteroidCollision {
         console.log(sol.asteroidCollision(astr).join(" "));
     }
 }
+
+export { AsteroidCollision as AsteroidCollision }

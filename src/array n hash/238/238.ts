@@ -1,5 +1,5 @@
 /* 238. product of array except self */
-// #: array + prefix/suffix
+// @: array + prefix/suffix
 import { ProductExceptSelf } from "./main";
 
 class A extends ProductExceptSelf {

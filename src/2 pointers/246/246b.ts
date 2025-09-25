@@ -1,5 +1,5 @@
 /* 246b. asteroid collision */
-// #: stack
+// @: stack
 import { AsteroidCollision } from "./main";
 import { Stack } from "datastructures-js";
 

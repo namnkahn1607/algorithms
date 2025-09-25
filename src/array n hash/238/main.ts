@@ -1,6 +1,6 @@
 /* 238. product of array except self */
 
-export abstract class ProductExceptSelf {
+abstract class ProductExceptSelf {
     abstract productExceptSelf(arr: number[]): number[];
 
     public static run(sol: ProductExceptSelf): void {
@@ -8,3 +8,5 @@ export abstract class ProductExceptSelf {
         console.log(sol.productExceptSelf(arr).join(" "));
     }
 }
+
+export { ProductExceptSelf as ProductExceptSelf };

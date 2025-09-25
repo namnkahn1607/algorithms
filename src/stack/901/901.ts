@@ -1,5 +1,5 @@
 /* 901. online stock span */
-// #: stack
+// @: stack
 import { _StockSpanner } from "./main";
 import { Stack } from "datastructures-js";
 

@@ -1,6 +1,6 @@
 /* 901. online stock span */
 
-export abstract class _StockSpanner {
+abstract class _StockSpanner {
     abstract next(price: number): number;
 
     public static run(stock: _StockSpanner): void {
@@ -14,3 +14,5 @@ export abstract class _StockSpanner {
         console.log(ans.join(" "));
     }
 }
+
+export { _StockSpanner as _StockSpanner };

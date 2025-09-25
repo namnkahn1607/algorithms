@@ -1,5 +1,5 @@
 /* 246a. asteroid collision */
-// #: 2 pointers + dp
+// @: 2 pointers + dp
 import { AsteroidCollision } from "./main";
 
 class A extends AsteroidCollision {
