@@ -4,7 +4,7 @@ import { ValidPalindrome } from "./main";
 
 class A extends ValidPalindrome {
     validPalindrome(str: string): boolean {
-        const palindrome = function(L: number, R: number): boolean {
+        const palindrome = (L: number, R: number): boolean => {
             while (L < R) {
                 if (str[L] !== str[R])
                     return false;

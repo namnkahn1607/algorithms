@@ -16,7 +16,7 @@ export class Graph {
         if (N === 0)
             return null;
 
-        const validateAdjList = function(): boolean {
+        const validateAdjList = (): boolean => {
             if (N < 0) return false;
 
             for (const list of adjList) {
@@ -53,7 +53,7 @@ export class Graph {
 
         switch (style) {
             case "dfs":
-                const dfs = function(node: _Node): void {
+                const dfs = (node: _Node): void => {
                     map.set(node, []);
                     const neighbors = map.get(node)!;
 

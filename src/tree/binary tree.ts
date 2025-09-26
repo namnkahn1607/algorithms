@@ -87,7 +87,7 @@ export class BinaryTree {
     public static preOrder(root: TreeNode | null): number[] {
         const ans: number[] = [];
 
-        const dfs = function(node: TreeNode | null): void {
+        const dfs = (node: TreeNode | null): void => {
             if (!node) return;
 
             ans.push(node.val);
@@ -103,7 +103,7 @@ export class BinaryTree {
     public static inOrder(root: TreeNode | null): number[] {
         const ans: number[] = [];
 
-        const dfs = function(node: TreeNode | null): void {
+        const dfs = (node: TreeNode | null): void => {
             if (!node) return;
 
             dfs(node.left);
@@ -119,7 +119,7 @@ export class BinaryTree {
     public static postOrder(root: TreeNode | null): number[] {
         const ans: number[] = [];
 
-        const dfs = function(node: TreeNode | null): void {
+        const dfs = (node: TreeNode | null): void => {
             if (!node) return;
 
             dfs(node.left);

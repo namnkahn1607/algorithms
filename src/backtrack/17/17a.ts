@@ -10,7 +10,7 @@ class A extends LetterCombination {
             "mno", "pqrs", "tuv", "wxyz"
         ];
 
-        const dfs = function(i: number, comp: string[]): void {
+        const dfs = (i: number, comp: string[]): void => {
             if (i >= digits.length) {
                 if (comp.length > 0)
                     ans.push(comp.join(""));

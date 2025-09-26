@@ -5,7 +5,7 @@ import { ListNode } from "../linked list";
 
 class A extends Add2Numbers {
     addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
-        const add = function(rem: number): ListNode | null {
+        const add = (rem: number): ListNode | null => {
             if (!l1 && !l2 && rem === 0)
                 return null;
 

@@ -9,7 +9,7 @@ class A extends CloneGraph {
 
         const map = new Map<number, _Node>();
 
-        const dfs = function(node: _Node): _Node {
+        const dfs = (node: _Node): _Node => {
             const val = node.val;
 
             if (map.has(val))

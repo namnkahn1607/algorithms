@@ -18,7 +18,7 @@ class WordDictionary extends WordDict {
     }
 
     search(word: string): boolean {
-        const searchFrom = function(cur: TrieNode, start: number): boolean {
+        const searchFrom = (cur: TrieNode, start: number): boolean => {
             for (let i = start; i < word.length; ++i) {
                 const c = word[i];
 
