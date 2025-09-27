@@ -14,4 +14,4 @@ abstract class Counter {
     }
 }
 
-export { Counter as Counter };
+export { Counter };

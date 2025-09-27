@@ -13,4 +13,4 @@ abstract class Add2Numbers {
     }
 }
 
-export { Add2Numbers as Add2Numbers };
+export { Add2Numbers };

@@ -9,4 +9,4 @@ abstract class AsteroidCollision {
     }
 }
 
-export { AsteroidCollision as AsteroidCollision }
+export { AsteroidCollision };

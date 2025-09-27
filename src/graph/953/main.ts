@@ -11,4 +11,4 @@ abstract class AlienDict {
     }
 }
 
-export { AlienDict as AlienDict };
+export { AlienDict };

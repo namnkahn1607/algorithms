@@ -18,4 +18,4 @@ abstract class DelNode {
     }
 }
 
-export { DelNode as DelNode };
+export { DelNode };

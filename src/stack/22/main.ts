@@ -9,4 +9,4 @@ abstract class ParenthesisGen {
     }
 }
 
-export { ParenthesisGen as ParenthesisGen };
+export { ParenthesisGen };

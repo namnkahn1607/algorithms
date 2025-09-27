@@ -16,4 +16,4 @@ class Kadane {
     }
 }
 
-export { Kadane as Kadane };
+export { Kadane };

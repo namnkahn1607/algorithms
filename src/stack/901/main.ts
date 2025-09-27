@@ -15,4 +15,4 @@ abstract class _StockSpanner {
     }
 }
 
-export { _StockSpanner as _StockSpanner };
+export { _StockSpanner };

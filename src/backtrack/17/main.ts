@@ -9,4 +9,4 @@ abstract class LetterCombination {
     }
 }
 
-export { LetterCombination as LetterCombination };
+export { LetterCombination };

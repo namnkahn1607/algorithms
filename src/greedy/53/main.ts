@@ -9,4 +9,4 @@ abstract class MaximumSubarray {
     }
 }
 
-export { MaximumSubarray as MaximumSubarray };
+export { MaximumSubarray };

@@ -9,4 +9,4 @@ abstract class ValidPalindrome {
     }
 }
 
-export { ValidPalindrome as ValidPalindrome };
+export { ValidPalindrome };

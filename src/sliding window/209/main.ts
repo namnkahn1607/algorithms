@@ -11,4 +11,4 @@ abstract class MinSubarraySum {
     }
 }
 
-export { MinSubarraySum as MinSubarraySum };
+export { MinSubarraySum };

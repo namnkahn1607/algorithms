@@ -2,14 +2,14 @@
 
 import { Queue } from "datastructures-js";
 
-export class _Node {
+class _Node {
     constructor(
         public val: number = 0,
         public neighbors: _Node[] = []
     ) {}
 }
 
-export class Graph {
+class Graph {
     public static createGraph(adjList: number[][]): _Node | null {
         const N: number = adjList.length;
 
@@ -98,3 +98,5 @@ export class Graph {
         console.log(ans);
     }
 }
+
+export { _Node, Graph };

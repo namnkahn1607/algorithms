@@ -55,5 +55,4 @@ class PrefixTree extends Trie {
     }
 }
 
-export { SearchSuggestion as SearchSuggestion };
-export { PrefixTree as PrefixTree };
+export { SearchSuggestion, PrefixTree };

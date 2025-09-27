@@ -1,0 +1,1 @@
+// even more sols: https://neetcode.io/solutions/find-the-index-of-the-first-occurrence-in-a-string

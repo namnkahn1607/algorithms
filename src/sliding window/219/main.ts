@@ -10,4 +10,4 @@ abstract class ContainsDuplicate {
     }
 }
 
-export { ContainsDuplicate as ContainsDuplicate };
+export { ContainsDuplicate };

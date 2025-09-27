@@ -1,13 +1,13 @@
 /* data structures: Linked List */
 
-export class ListNode {
+class ListNode {
     constructor(
         public val: number = 0,
         public next: ListNode | null = null
     ) {}
 }
 
-export class SinglyLinkedList {
+class SinglyLinkedList {
     public static createSLList(arr: number[]): ListNode | null {
         const [head, _] = SinglyLinkedList.createSLListWithTail(arr);
 
@@ -50,3 +50,5 @@ export class SinglyLinkedList {
         return ans;
     }
 }
+
+export { SinglyLinkedList, ListNode };

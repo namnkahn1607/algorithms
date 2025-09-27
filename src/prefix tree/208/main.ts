@@ -44,4 +44,4 @@ abstract class _PrefixTree extends Trie {
     }
 }
 
-export { _PrefixTree as _PrefixTree };
+export { _PrefixTree };

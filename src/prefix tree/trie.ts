@@ -1,13 +1,13 @@
 /* data structures: Prefix Tree */
 
-export class TrieNode {
+class TrieNode {
     constructor(
         public children = new Map<string, TrieNode>(),
         public terminal: boolean = false
     ) {}
 }
 
-export class Trie {
+class Trie {
     constructor(
         protected root = new TrieNode()
     ) {}
@@ -41,3 +41,5 @@ export class Trie {
         return cur.terminal;
     }
 }
+
+export { TrieNode, Trie };

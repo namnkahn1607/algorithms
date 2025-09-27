@@ -2,7 +2,7 @@
 
 import { Queue } from "datastructures-js";
 
-export class TreeNode {
+class TreeNode {
     constructor(
         public val: number = 0,
         public left: TreeNode | null = null,
@@ -10,7 +10,7 @@ export class TreeNode {
     ) {}
 }
 
-export class BinaryTree {
+class BinaryTree {
     public static createBinaryTree(arr: (number | null)[]): TreeNode | null {
         if (!arr?.length || typeof arr[0] !== "number")
             return null;
@@ -154,3 +154,5 @@ export class BinaryTree {
         return ans;
     }
 }
+
+export { BinaryTree, TreeNode };

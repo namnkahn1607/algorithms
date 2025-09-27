@@ -11,4 +11,4 @@ abstract class SubarraySumK {
     }
 }
 
-export { SubarraySumK as SubarraySumK };
+export { SubarraySumK };

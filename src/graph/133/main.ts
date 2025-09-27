@@ -16,4 +16,4 @@ abstract class CloneGraph {
     }
 }
 
-export { CloneGraph as CloneGraph };
+export { CloneGraph };

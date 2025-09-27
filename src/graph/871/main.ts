@@ -12,4 +12,4 @@ abstract class KeyRoom {
     }
 }
 
-export { KeyRoom as KeyRoom };
+export { KeyRoom };

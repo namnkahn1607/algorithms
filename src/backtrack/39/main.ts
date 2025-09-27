@@ -13,4 +13,4 @@ abstract class CombinationSum {
     }
 }
 
-export { CombinationSum as CombinationSum };
+export { CombinationSum };

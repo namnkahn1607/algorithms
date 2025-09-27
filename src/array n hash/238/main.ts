@@ -9,4 +9,4 @@ abstract class ProductExceptSelf {
     }
 }
 
-export { ProductExceptSelf as ProductExceptSelf };
+export { ProductExceptSelf };

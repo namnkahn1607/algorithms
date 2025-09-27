@@ -13,4 +13,4 @@ abstract class Merge2Lists {
     }
 }
 
-export { Merge2Lists as Merge2Lists };
+export { Merge2Lists };

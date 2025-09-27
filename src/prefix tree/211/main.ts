@@ -39,4 +39,4 @@ abstract class WordDict extends Trie {
     }
 }
 
-export { WordDict as WordDict };
+export { WordDict };

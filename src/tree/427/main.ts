@@ -21,4 +21,4 @@ abstract class ConstructQuadTree {
     }
 }
 
-export { ConstructQuadTree as ConstructQuadTree };
+export { ConstructQuadTree };
