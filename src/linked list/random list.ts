@@ -28,7 +28,24 @@ class RandomList {
     }
 
     public static printRandomList(head: _Node | null): void {
+        const map = new Map<_Node, number>();
+        let curr = head;
+        let i = 1;
 
+        while (curr) {
+            map.set(curr, i++);
+            curr = curr.next;
+        }
+
+        const ans: string[] = [];
+        curr = head;
+
+        while (curr) {
+            ans.push(`${curr.val},${curr.random ? map.get(curr.random) : null}`)
+            curr = curr.next;
+        }
+
+        console.log(ans.join(" "));
     }
 }
 
