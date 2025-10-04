@@ -16,7 +16,7 @@ class Dijkstra {
             adj.get(u)!.push([v, w]);
 
         const minHeap = new MinPriorityQueue<number[]>(
-            { compare: (a: number[], b: number[]) => a[0] - b[0] }
+            { compare: (a, b) => a[0] - b[0] }
         );
         minHeap.enqueue([0, src]);
 
