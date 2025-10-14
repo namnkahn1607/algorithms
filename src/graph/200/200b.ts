@@ -1,6 +1,6 @@
 /* 200b. number of islands */
 // @: bfs
-import { IsLandMap } from "./main";
+import { IsLandMap } from "./run";
 import { Queue } from "datastructures-js";
 
 class B extends IsLandMap {

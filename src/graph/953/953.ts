@@ -1,6 +1,6 @@
 /* 953. verify an alien dictionary */
 // @:
-import { AlienDict } from "./main";
+import { AlienDict } from "./run";
 
 class A extends AlienDict {
     isAlienSorted(words: string[], order: string): boolean {

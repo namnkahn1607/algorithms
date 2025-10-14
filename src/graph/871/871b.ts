@@ -1,6 +1,6 @@
 /* 871b. keys and rooms */
 // @: bfs
-import { KeyRoom } from "./main";
+import { KeyRoom } from "./run";
 import { Queue } from "datastructures-js";
 
 class B extends KeyRoom {

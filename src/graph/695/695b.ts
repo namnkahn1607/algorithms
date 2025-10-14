@@ -1,6 +1,6 @@
 /* 695b. max area of island */
 // @: bfs
-import { AreaIsland } from "./main";
+import { AreaIsland } from "./run";
 import { Queue } from "datastructures-js";
 
 class B extends AreaIsland {

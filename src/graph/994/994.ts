@@ -1,6 +1,6 @@
 /* 994. rotting fruit */
 // @: bfs
-import { DomainExpansion } from "./main";
+import { DomainExpansion } from "./run";
 import { Queue } from "datastructures-js";
 
 class A extends DomainExpansion {

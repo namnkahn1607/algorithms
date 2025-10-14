@@ -1,6 +1,6 @@
 /* 219. contains duplicate 2 */
 // @: sliding window
-import { ContainsDuplicate } from "./main";
+import { ContainsDuplicate } from "./run";
 
 class A extends ContainsDuplicate {
     containsNearbyDuplicate(arr: number[], k: number): boolean {

@@ -1,6 +1,6 @@
 /* 286a. walls and gates */
 // @: multi-source bfs
-import { WallGates } from "./main";
+import { WallGates } from "./run";
 import { Queue } from "datastructures-js";
 
 class A extends WallGates {

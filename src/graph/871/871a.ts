@@ -1,6 +1,6 @@
 /* 871a. keys and rooms */
 // @: dfs
-import { KeyRoom } from "./main";
+import { KeyRoom } from "./run";
 
 class A extends KeyRoom {
     canVisitAllRooms(rooms: number[][]): boolean {

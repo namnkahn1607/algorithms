@@ -1,6 +1,6 @@
 /* 200a. number of islands */
 // @: dfs
-import { IsLandMap } from "./main";
+import { IsLandMap } from "./run";
 
 class A extends IsLandMap {
     numIslands(grid: string[][]): number {

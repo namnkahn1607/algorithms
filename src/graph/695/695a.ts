@@ -1,6 +1,6 @@
 /* 695a. max area of island */
 // @: dfs
-import { AreaIsland } from "./main";
+import { AreaIsland } from "./run";
 
 class A extends AreaIsland {
     maxAreaOfIsland(grid: number[][]): number {

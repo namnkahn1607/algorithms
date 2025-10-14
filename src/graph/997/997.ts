@@ -1,6 +1,6 @@
 /* 997. find the town judge */
 // @: indegree & outdegree
-import { TownJudge } from "./main";
+import { TownJudge } from "./run";
 
 class A extends TownJudge {
     findJudge(n: number, trust: number[][]): number {

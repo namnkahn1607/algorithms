@@ -1,6 +1,6 @@
 /* 209. minimum size subarray sum */
 // @: sliding window
-import { MinSubarraySum } from "./main";
+import { MinSubarraySum } from "./run";
 
 class A extends MinSubarraySum {
     minSubarrayLen(arr: number[], target: number): number {
