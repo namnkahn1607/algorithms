@@ -1,6 +1,6 @@
 /* 39. combination sum */
 // @: backtrack
-import { CombinationSum } from "./main";
+import { CombinationSum } from "./run";
 
 class A extends CombinationSum {
     combinationSum(nums: number[], target: number): number[][] {

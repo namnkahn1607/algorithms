@@ -1,6 +1,6 @@
 /* 21a. merge 2 sorted lists */
 // @: linked list + recursion
-import { Merge2Lists } from "./main";
+import { Merge2Lists } from "./run";
 import { ListNode } from "../linked list";
 
 class A extends Merge2Lists {

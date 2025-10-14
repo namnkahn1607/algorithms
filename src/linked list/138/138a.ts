@@ -1,6 +1,6 @@
 /* 138a. copy list with random pointer */
 // @: linked list
-import { CopyRList } from "./main";
+import { CopyRList } from "./run";
 import { _Node } from "../random list";
 
 class A extends CopyRList {

@@ -1,6 +1,6 @@
 /* 2a. add 2 numbers */
 // @: linked list + recursion
-import { Add2Numbers } from "./main";
+import { Add2Numbers } from "./run";
 import { ListNode } from "../linked list";
 
 class A extends Add2Numbers {

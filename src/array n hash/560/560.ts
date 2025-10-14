@@ -1,6 +1,6 @@
 /* 560. subarray sum equals k */
 // @: array + prefix/suffix
-import { SubarraySumK } from "./main";
+import { SubarraySumK } from "./run";
 
 class A extends SubarraySumK {
     subarraySum(arr: number[], k: number): number {

@@ -1,6 +1,6 @@
 /* 622. design circular queue */
 // @: linked list
-import { CQueue } from "./main";
+import { CQueue } from "./run";
 
 class CircularQueue extends CQueue {
     constructor(k: number,

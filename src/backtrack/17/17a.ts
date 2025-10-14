@@ -1,6 +1,6 @@
 /* 17a. letter combination of a phone number */
 // @: backtrack
-import { LetterCombination } from "./main";
+import { LetterCombination } from "./run";
 
 class A extends LetterCombination {
     letterCombinations(digits: string): string[] {

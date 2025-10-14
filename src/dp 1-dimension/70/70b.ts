@@ -1,6 +1,6 @@
 /* 70b. climbing stairs */
 // @: dp (bottom up)
-import { StairsClimb } from "./main";
+import { StairsClimb } from "./run";
 
 class B extends StairsClimb {
     climbStairs(n: number): number {

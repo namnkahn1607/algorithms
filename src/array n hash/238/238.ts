@@ -1,6 +1,6 @@
 /* 238. product of array except self */
 // @: array + prefix/suffix
-import { ProductExceptSelf } from "./main";
+import { ProductExceptSelf } from "./run";
 
 class A extends ProductExceptSelf {
     productExceptSelf(arr: number[]): number[] {

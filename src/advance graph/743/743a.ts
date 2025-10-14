@@ -1,6 +1,6 @@
 /* 743a. network delay time */
 // @: dijkstra
-import { NetworkNode } from "./main";
+import { NetworkNode } from "./run";
 import { MinPriorityQueue } from "datastructures-js";
 
 class A extends NetworkNode {

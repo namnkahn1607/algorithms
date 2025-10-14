@@ -1,6 +1,6 @@
 /* 41a. first missing positive */
 // @: array
-import { FirstMiss } from "./main";
+import { FirstMiss } from "./run";
 
 class A extends FirstMiss {
     firstMissingPositive(nums: number[]): number {

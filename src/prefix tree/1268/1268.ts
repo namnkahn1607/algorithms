@@ -1,7 +1,7 @@
 /* 1268. search suggestion system */
 // @: trie
-import { SearchSuggestion } from "./main";
-import { PrefixTree } from "./main";
+import { SearchSuggestion } from "./run";
+import { PrefixTree } from "./run";
 
 class A extends SearchSuggestion {
     suggestedProducts(products: string[], searchWord: string): string[][] {

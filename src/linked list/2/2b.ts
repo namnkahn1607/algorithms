@@ -1,6 +1,6 @@
 /* 2b. add 2 numbers */
 // @: linked list + iteration
-import { Add2Numbers } from "./main";
+import { Add2Numbers } from "./run";
 import { ListNode } from "../linked list";
 
 class B extends Add2Numbers {

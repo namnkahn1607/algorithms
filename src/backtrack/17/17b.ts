@@ -1,6 +1,6 @@
 /* 17b. letter combination of a phone number */
 // @: iteration
-import { LetterCombination } from "./main";
+import { LetterCombination } from "./run";
 import { Queue } from "datastructures-js";
 
 class B extends LetterCombination {

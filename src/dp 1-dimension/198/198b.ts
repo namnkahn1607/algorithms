@@ -1,6 +1,6 @@
 /* 198b. house robber */
 // @: dp (top down)
-import { Robber } from "./main";
+import { Robber } from "./run";
 
 class B extends Robber {
     rob(nums: number[]): number {

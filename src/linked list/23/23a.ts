@@ -1,6 +1,6 @@
 /* 23a. merge k sorted lists */
 // @: divide and conquer (recursion)
-import { MergeList } from "./main";
+import { MergeList } from "./run";
 import { ListNode } from "../linked list";
 
 class A extends MergeList {

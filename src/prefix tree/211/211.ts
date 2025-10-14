@@ -1,6 +1,6 @@
 /* 211. add and search word data structure */
 // @: trie
-import { WordDict } from "./main";
+import { WordDict } from "./run";
 import { TrieNode } from "../trie";
 
 class WordDictionary extends WordDict {

@@ -1,6 +1,6 @@
 /* 53a. maximum subarray */
 // @: greedy (Kadane)
-import { MaximumSubarray } from "./main";
+import { MaximumSubarray } from "./run";
 import { Kadane } from "../kadane";
 
 class A extends MaximumSubarray {

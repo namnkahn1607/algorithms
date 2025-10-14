@@ -1,6 +1,6 @@
 /* 77a. combinations */
 // @: backtrack I
-import { Combinations } from "./main";
+import { Combinations } from "./run";
 
 class A extends Combinations {
     combine(n: number, k: number): number[][] {

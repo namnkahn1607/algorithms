@@ -1,6 +1,6 @@
 /* 33. search in rotated sorted array */
 // @: binary search
-import { SearchRotated } from "./main";
+import { SearchRotated } from "./run";
 
 class A extends SearchRotated {
     search(nums: number[], target: number): number {

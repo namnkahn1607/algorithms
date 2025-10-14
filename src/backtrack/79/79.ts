@@ -1,6 +1,6 @@
 /* 79. word search */
 // @: backtrack
-import { SearchWord } from "./main";
+import { SearchWord } from "./run";
 
 class A extends SearchWord {
     exist(board: string[][], word: string): boolean {

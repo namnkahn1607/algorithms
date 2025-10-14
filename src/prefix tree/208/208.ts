@@ -1,6 +1,6 @@
 /* 208. implement prefix tree */
 // @: trie
-import { _PrefixTree } from "./main";
+import { _PrefixTree } from "./run";
 import { Trie } from "../trie";
 
 class PrefixTree extends _PrefixTree {

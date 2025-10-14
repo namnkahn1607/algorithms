@@ -1,6 +1,6 @@
 /* 23c. merge k sorted lists */
 // @: heap
-import { MergeList } from "./main";
+import { MergeList } from "./run";
 import { MinPriorityQueue } from "datastructures-js";
 import { ListNode } from "../linked list";
 
