@@ -1,6 +1,6 @@
 /* 739b. daily temperatures */
 // @: stack
-import { DailyTemp } from "./main";
+import { DailyTemp } from "./run";
 import { Stack } from "datastructures-js";
 
 class B extends DailyTemp {

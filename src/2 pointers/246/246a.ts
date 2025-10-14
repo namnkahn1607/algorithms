@@ -1,6 +1,6 @@
 /* 246a. asteroid collision */
 // @: 2 pointers + dp
-import { AsteroidCollision } from "./main";
+import { AsteroidCollision } from "./run";
 
 class A extends AsteroidCollision {
     asteroidCollision(astr: number[]): number[] {

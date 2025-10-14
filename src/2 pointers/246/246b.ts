@@ -1,6 +1,6 @@
 /* 246b. asteroid collision */
 // @: stack
-import { AsteroidCollision } from "./main";
+import { AsteroidCollision } from "./run";
 import { Stack } from "datastructures-js";
 
 class B extends AsteroidCollision {

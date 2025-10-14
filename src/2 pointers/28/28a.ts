@@ -1,6 +1,6 @@
 /* 28a. needle in haystack */
 // @: 2 pointers
-import { NeedleHaystack } from "./main";
+import { NeedleHaystack } from "./run";
 
 class A extends NeedleHaystack {
     strStr(haystack: string, needle: string): number {

@@ -1,6 +1,6 @@
 /* 739a. daily temperatures */
 // @: 2 pointers + dp
-import { DailyTemp } from "./main";
+import { DailyTemp } from "./run";
 
 class A extends DailyTemp {
     dailyTemperatures(tmps: number[]): number[] {

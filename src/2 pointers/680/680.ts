@@ -1,6 +1,6 @@
 /* 680. valid palindrome 2 */
 // @: 2 pointers
-import { ValidPalindrome } from "./main";
+import { ValidPalindrome } from "./run";
 
 class A extends ValidPalindrome {
     validPalindrome(str: string): boolean {

@@ -1,6 +1,6 @@
 /* 122. best time to buy and sell stocks 2 */
 // @: 2 pointers
-import { StockTrade } from "./main";
+import { StockTrade } from "./run";
 
 class A extends StockTrade {
     maxProfit(prices: number[]): number {

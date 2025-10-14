@@ -1,6 +1,6 @@
 /* 28b. needle in haystack */
 // @: Knuth Morris Pratt
-import { NeedleHaystack } from "./main";
+import { NeedleHaystack } from "./run";
 
 class B extends NeedleHaystack {
     strStr(haystack: string, needle: string): number {

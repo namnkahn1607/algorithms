@@ -1,6 +1,6 @@
 /* 167a. 2 integer sum 2 */
 // @: 2 pointers
-import { SumTwo } from "./main";
+import { SumTwo } from "./run";
 
 class A extends SumTwo {
     twoSum(arr: number[], target: number): number[] {
