@@ -1,4 +1,4 @@
-/* 130a. surrounded region */
+/* 130a. surrounded regions */
 // @: dfs
 import { XO } from "./run";
 

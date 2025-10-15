@@ -1,6 +1,6 @@
 /* 100a. same binary tree */
 // @: binary tree + dfs
-import { SameTree } from "./main";
+import { SameTree } from "./run";
 import { TreeNode } from "../binary tree";
 
 class A extends SameTree {

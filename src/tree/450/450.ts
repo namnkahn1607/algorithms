@@ -1,6 +1,6 @@
 /* 450. delete node in a BST */
 // @: bst + dfs
-import { DelNode } from "./main";
+import { DelNode } from "./run";
 import { TreeNode } from "../binary tree";
 
 class A extends DelNode {

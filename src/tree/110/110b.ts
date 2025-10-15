@@ -1,6 +1,6 @@
 /* 110b. balanced binary tree */
 // @: binary tree + dfs
-import { BalancedTree } from "./main";
+import { BalancedTree } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 

@@ -1,6 +1,6 @@
 /* 427. construct quad tree */
 // @: divide n conquer
-import { ConstructQuadTree } from "./main";
+import { ConstructQuadTree } from "./run";
 import { _Node } from "../quad tree";
 
 class A extends ConstructQuadTree {

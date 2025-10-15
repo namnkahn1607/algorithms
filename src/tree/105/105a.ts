@@ -1,6 +1,6 @@
 /* 105a. construct binary tree from preorder and inorder traversal */
 // @: binary tree + dfs
-import { ConstructTree } from "./main";
+import { ConstructTree } from "./run";
 import { TreeNode } from "../binary tree";
 
 class A extends ConstructTree {

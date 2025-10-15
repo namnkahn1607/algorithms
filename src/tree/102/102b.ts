@@ -1,6 +1,6 @@
 /* 102b. binary tree level order traversal */
 // @: binary tree + dfs
-import { LevelOrder } from "./main";
+import { LevelOrder } from "./run";
 import { TreeNode } from "../binary tree";
 
 class B extends LevelOrder {

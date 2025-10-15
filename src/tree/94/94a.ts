@@ -1,6 +1,6 @@
 /* 94a. binary tree inorder traversal */
-// @: binary tree + dfs
-import { Inorder } from "./main";
+// @: iterative dfs
+import { Inorder } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 

@@ -1,6 +1,6 @@
 /* 853. car fleet */
 // @: stack
-import { Fleet } from "./main";
+import { Fleet } from "./run";
 
 class A extends Fleet {
     carFleet(target: number, position: number[], speed: number[]): number {

@@ -1,6 +1,6 @@
 /* 104b. maximum depth of binary tree */
 // @: binary tree + divide and conquer
-import { TreeDepth } from "./main";
+import { TreeDepth } from "./run";
 import { TreeNode } from "../binary tree";
 
 class B extends TreeDepth {

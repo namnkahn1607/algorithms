@@ -1,6 +1,6 @@
 /* 71. simplify path */
 // @: stack
-import { Simplification } from "./main";
+import { Simplification } from "./run";
 
 class A extends Simplification {
     simplifyPath(path: string): string {

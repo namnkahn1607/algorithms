@@ -1,6 +1,6 @@
 /* 104a. maximum depth of binary tree */
 // @: binary tree + bfs
-import { TreeDepth } from "./main";
+import { TreeDepth } from "./run";
 import { TreeNode } from "../binary tree";
 import { Queue } from "datastructures-js";
 

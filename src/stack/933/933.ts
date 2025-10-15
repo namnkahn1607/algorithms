@@ -1,6 +1,6 @@
 /* 933. number of recent calls */
 // @: queue
-import { Counter } from "./main";
+import { Counter } from "./run";
 import { Queue } from "datastructures-js";
 
 class RecentCounter extends Counter {

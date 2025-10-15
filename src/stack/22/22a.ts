@@ -1,6 +1,6 @@
 /* 22a. generate parentheses */
 // @: stack
-import { ParenthesisGen } from "./main";
+import { ParenthesisGen } from "./run";
 import { Stack } from "datastructures-js";
 
 class A extends ParenthesisGen {

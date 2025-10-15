@@ -1,6 +1,6 @@
 /* 22b. generate parentheses */
 // @: backtrack
-import { ParenthesisGen } from "./main";
+import { ParenthesisGen } from "./run";
 
 class B extends ParenthesisGen {
     generateParenthesis(n: number): string[] {

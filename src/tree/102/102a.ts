@@ -1,6 +1,6 @@
 /* 102a. binary tree level order traversal */
 // @: binary tree + bfs
-import { LevelOrder } from "./main";
+import { LevelOrder } from "./run";
 import { TreeNode } from "../binary tree";
 import { Queue } from "datastructures-js";
 
