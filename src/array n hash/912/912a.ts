@@ -29,8 +29,12 @@ class MergeSort extends ArraySort {
     }
 
     sort(arr: number[], L: number, R: number): void {
-        if (L >= R)
+        if (L + 1 >= R) {
+            if (L + 1 === R && arr[L] > arr[R])
+                [arr[L], arr[R]] = [arr[R], arr[L]];
+            
             return;
+        }
 
         const M = L + Math.trunc((R - L) / 2);
         this.sort(arr, L, M);
