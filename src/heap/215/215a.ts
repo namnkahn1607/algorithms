@@ -1,5 +1,5 @@
 /* 215a. kth largest element in array */
-// @: heap
+// @: min heap
 import { ArrayKth } from "./run";
 import { MinPriorityQueue } from "datastructures-js";
 

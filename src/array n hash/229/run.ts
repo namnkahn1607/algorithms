@@ -1,9 +1,9 @@
 /* 229. majority elements II */
 
-abstract class Majority {
+abstract class MajorityII {
     abstract majorityElement(nums: number[]): number[];
 
-    public static run(sol: Majority): void {
+    public static run(sol: MajorityII): void {
         const arr: number[][] = [
             [1, 2, 3, 3, 3, 3, 3],
             [2, 1, 2],
@@ -15,4 +15,4 @@ abstract class Majority {
     }
 }
 
-export { Majority };
+export { MajorityII };
