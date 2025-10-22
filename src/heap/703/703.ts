@@ -1,5 +1,5 @@
 /* 703. k-th largest element in a stream */
-// @: heap
+// @: min heap
 import { StreamKth } from "./run";
 
 class KthLargest extends StreamKth {

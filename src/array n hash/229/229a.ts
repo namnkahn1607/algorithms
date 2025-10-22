@@ -1,8 +1,8 @@
-/* 229. majority elements II */
+/* 229a. majority elements II */
 // @: Boyer-Moore
-import { Majority } from "./run";
+import { MajorityII } from "./run";
 
-class A extends Majority {
+class A extends MajorityII {
     majorityElement(nums: number[]): number[] {
         let [can1, can2] = [NaN, NaN];
         let [cnt1, cnt2] = [0, 0];
