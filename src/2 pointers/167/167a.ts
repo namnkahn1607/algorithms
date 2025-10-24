@@ -1,8 +1,7 @@
-/* 167a. 2 integer sum 2 */
+/* 167a. 2 integer sum II */
 // @: 2 pointers
-import { SumTwo } from "./run";
 
-class A extends SumTwo {
+class A  {
     twoSum(arr: number[], target: number): number[] {
         let [L, R] = [0, arr.length - 1];
 
@@ -21,4 +20,4 @@ class A extends SumTwo {
     }
 }
 
-A.run(new A());
+export { A };

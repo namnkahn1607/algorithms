@@ -1,8 +1,7 @@
 /* 246a. asteroid collision */
 // @: 2 pointers + dp
-import { AsteroidCollision } from "./run";
 
-class A extends AsteroidCollision {
+class A {
     asteroidCollision(astr: number[]): number[] {
         let i = -1;
 
@@ -21,8 +20,9 @@ class A extends AsteroidCollision {
                 }
             }
 
-            if (a !== 0)
+            if (a !== 0) {
                 astr[++i] = a;
+            }
         }
 
         astr.splice(i + 1);
@@ -31,4 +31,4 @@ class A extends AsteroidCollision {
     }
 }
 
-A.run(new A());
+export { A };

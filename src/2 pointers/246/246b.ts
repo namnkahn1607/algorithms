@@ -1,9 +1,8 @@
 /* 246b. asteroid collision */
 // @: stack
-import { AsteroidCollision } from "./run";
 import { Stack } from "datastructures-js";
 
-class B extends AsteroidCollision {
+class B {
     asteroidCollision(astr: number[]): number[] {
         const stack = new Stack<number>();
 
@@ -21,12 +20,13 @@ class B extends AsteroidCollision {
                 }
             }
 
-            if (a !== 0)
+            if (a !== 0) {
                 stack.push(a);
+            }
         }
 
         return stack.toArray();
     }
 }
 
-B.run(new B());
+export { B };

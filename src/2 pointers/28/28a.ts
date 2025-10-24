@@ -1,8 +1,7 @@
 /* 28a. needle in haystack */
 // @: 2 pointers
-import { NeedleHaystack } from "./run";
 
-class A extends NeedleHaystack {
+class A  {
     strStr(haystack: string, needle: string): number {
         const [m, n] = [haystack.length, needle.length];
         let j = 0;
@@ -15,12 +14,13 @@ class A extends NeedleHaystack {
                 j = 0;
             }
 
-            if (j === n)
+            if (j === n) {
                 return i - n + 1;
+            }
         }
 
         return -1;
     }
 }
 
-A.run(new A());
+export { A };

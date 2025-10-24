@@ -1,8 +1,7 @@
-/* 680. valid palindrome 2 */
+/* 680. valid palindrome II */
 // @: 2 pointers
-import { ValidPalindrome } from "./run";
 
-class A extends ValidPalindrome {
+class A {
     validPalindrome(str: string): boolean {
         const palindrome = (L: number, R: number): boolean => {
             while (L < R) {
@@ -28,4 +27,4 @@ class A extends ValidPalindrome {
     }
 }
 
-A.run(new A());
+export { A };

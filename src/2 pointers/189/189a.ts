@@ -1,12 +1,11 @@
 /* 189a. rotate array */
 // @: 2 pointers
-import { ArrayRotate } from "./run";
 
-class A extends ArrayRotate {
+class A {
     rotate(arr: number[], k: number): void {
         const reverse = (L: number, R: number) => {
             while (L < R) {
-                [arr[L], arr[L]] = [arr[R], arr[L]];
+                [arr[L], arr[R]] = [arr[R], arr[L]];
                 ++L; --R;
             }
         };
@@ -21,4 +20,4 @@ class A extends ArrayRotate {
     }
 }
 
-A.run(new A());
+export { A };

@@ -1,8 +1,7 @@
 /* 88. merge sorted array */
 // @: 2 pointers
-import { MergeSorted } from "./run";
 
-class A extends MergeSorted {
+class A {
     merge(nums1: number[], m: number, nums2: number[], n: number) {
         let [i, j, k] = [m - 1, n - 1, m + n - 1];
 
@@ -24,4 +23,4 @@ class A extends MergeSorted {
     }
 }
 
-A.run(new A());
+export { A };

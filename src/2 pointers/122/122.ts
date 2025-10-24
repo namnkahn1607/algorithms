@@ -1,8 +1,7 @@
-/* 122. best time to buy and sell stocks 2 */
+/* 122. best time to buy and sell stocks II */
 // @: 2 pointers
-import { StockTrade } from "./run";
 
-class A extends StockTrade {
+class A {
     maxProfit(prices: number[]): number {
         const m = prices.length;
         let [profit, buy] = [0, prices[0]];
@@ -18,4 +17,4 @@ class A extends StockTrade {
     }
 }
 
-A.run(new A());
+export { A };

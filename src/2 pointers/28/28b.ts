@@ -1,8 +1,7 @@
 /* 28b. needle in haystack */
 // @: Knuth Morris Pratt
-import { NeedleHaystack } from "./run";
 
-class B extends NeedleHaystack {
+class B {
     strStr(haystack: string, needle: string): number {
         if (needle === "") return 0;
 
@@ -33,12 +32,13 @@ class B extends NeedleHaystack {
                 j = LPS[j - 1];
             }
 
-            if (j === n)
+            if (j === n) {
                 return i - n;
+            }
         }
 
         return -1;
     }
 }
 
-B.run(new B());
+export { B };

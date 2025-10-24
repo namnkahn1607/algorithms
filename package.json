@@ -5,13 +5,16 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest"
   },
   "dependencies": {
     "datastructures-js": "^13.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "vite": "^7.1.12",
+    "vitest": "^4.0.2",
     "@types/lodash": "^4.17.20",
     "typescript": "^5.5.3"
   },

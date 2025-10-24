@@ -1,9 +1,8 @@
 /* 739b. daily temperatures */
 // @: stack
-import { DailyTemp } from "./run";
 import { Stack } from "datastructures-js";
 
-class B extends DailyTemp {
+class B {
     dailyTemperatures(tmps: number[]): number[] {
         const m = tmps.length;
 
@@ -26,4 +25,4 @@ class B extends DailyTemp {
     }
 }
 
-B.run(new B())
+export { B };

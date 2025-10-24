@@ -1,8 +1,7 @@
 /* 739a. daily temperatures */
 // @: 2 pointers + dp
-import { DailyTemp } from "./run";
 
-class A extends DailyTemp {
+class A {
     dailyTemperatures(tmps: number[]): number[] {
         const m = tmps.length;
         const ans = new Array<number>(m).fill(0);
@@ -19,12 +18,13 @@ class A extends DailyTemp {
                 j += ans[j];
             }
 
-            if (j !== m)
+            if (j !== m) {
                 ans[i] = j - i;
+            }
         }
 
         return ans;
     }
 }
 
-A.run(new A());
+export { A };

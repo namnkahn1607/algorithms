@@ -28,13 +28,9 @@ class A extends MajorityII {
         const m = nums.length;
 
         const count = (key: number): number => {
-            let cnt = 0;
-
-            for (const num of nums) {
-                if (num === key) ++cnt;
-            }
-
-            return cnt;
+            return nums.reduce(
+                (count, num) => num === key ? ++count : count, 0
+            );
         }
 
         for (const can of [can1, can2]) {
