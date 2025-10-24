@@ -1,9 +1,8 @@
 /* 20. valid parentheses */
 // @: stack
-import { Parentheses } from "./run";
 import { Stack } from "datastructures-js";
 
-class A extends Parentheses {
+class A {
     isValid(str: string): boolean {
         const stack = new Stack<string>();
         const map = new Map<string, string>([
@@ -16,6 +15,7 @@ class A extends Parentheses {
                     stack.pop();
                 else
                     return false;
+
             } else {
                 stack.push(c);
             }
@@ -25,4 +25,4 @@ class A extends Parentheses {
     }
 }
 
-A.run(new A());
+export { A };

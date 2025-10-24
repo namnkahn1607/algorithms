@@ -2,7 +2,7 @@
 // @: dijkstra
 import { MinPriorityQueue } from "datastructures-js";
 
-class A {
+class A extends NetworkNode {
     networkDelayTime(times: number[][], n: number, k: number): number {
         const adj = new Map<number, number[][]>();
 

@@ -1,6 +1,5 @@
 /* 22b. generate parentheses */
 // @: backtrack
-import { ParenthesisGen } from "./run";
 
 class B extends ParenthesisGen {
     generateParenthesis(n: number): string[] {
@@ -34,4 +33,4 @@ class B extends ParenthesisGen {
     }
 }
 
-B.run(new B());
+export { B };

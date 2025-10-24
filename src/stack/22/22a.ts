@@ -1,6 +1,5 @@
 /* 22a. generate parentheses */
 // @: stack
-import { ParenthesisGen } from "./run";
 import { Stack } from "datastructures-js";
 
 class A extends ParenthesisGen {
@@ -25,4 +24,4 @@ class A extends ParenthesisGen {
     }
 }
 
-A.run(new A());
+export { A };

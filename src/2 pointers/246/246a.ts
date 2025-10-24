@@ -1,7 +1,7 @@
 /* 246a. asteroid collision */
 // @: 2 pointers + dp
 
-class A {
+class A extends AsteroidCollision {
     asteroidCollision(astr: number[]): number[] {
         let i = -1;
 
