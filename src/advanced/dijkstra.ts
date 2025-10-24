@@ -16,7 +16,7 @@ class Dijkstra {
             adj.get(u)!.push([v, w]);
 
         const minHeap = new MinPriorityQueue<number[]>(
-            { compare: (a, b) => a[0] - b[0] }
+            {compare: (a, b) => a[0] - b[0]}
         );
         minHeap.enqueue([0, src]);
 
@@ -36,17 +36,6 @@ class Dijkstra {
 
         return dist;
     }
-
-    public static main(): void {
-        const N: number = 5;
-        const edges: number[][] = [
-            [0, 1, 10], [0, 2, 3], [1, 3, 2], [2, 1, 4],
-            [2, 3, 8], [2, 4, 2], [3, 4, 5]
-        ];
-        const src: number = 0;
-
-        console.log(new Dijkstra().shortestPath(N, edges, src));
-    }
 }
 
-Dijkstra.main();
+export { Dijkstra };

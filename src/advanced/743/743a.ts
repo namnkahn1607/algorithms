@@ -1,9 +1,8 @@
 /* 743a. network delay time */
 // @: dijkstra
-import { NetworkNode } from "./run";
 import { MinPriorityQueue } from "datastructures-js";
 
-class A extends NetworkNode {
+class A {
     networkDelayTime(times: number[][], n: number, k: number): number {
         const adj = new Map<number, number[][]>();
 
@@ -40,4 +39,4 @@ class A extends NetworkNode {
     }
 }
 
-A.run(new A());
+export { A };
