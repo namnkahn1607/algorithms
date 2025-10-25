@@ -1,12 +1,9 @@
 /* 933. number of recent calls */
 // @: queue
-import { Counter } from "./run";
 import { Queue } from "datastructures-js";
 
-class RecentCounter extends Counter {
-    constructor(private queue = new Queue<number>()) {
-        super();
-    }
+class RecentCounter {
+    constructor(private queue = new Queue<number>()) {}
 
     ping(t: number): number {
         const q = this.queue;
@@ -19,4 +16,4 @@ class RecentCounter extends Counter {
     }
 }
 
-RecentCounter.run(new RecentCounter());
+export { RecentCounter };

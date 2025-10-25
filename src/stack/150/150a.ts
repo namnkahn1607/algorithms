@@ -1,9 +1,8 @@
 /* 150a. evaluate reverse polish notation */
 // @: stack
-import { RPN } from "./run";
 import { Stack } from "datastructures-js";
 
-class A extends RPN {
+class A {
     evaluateRPN(tokens: string[]): number {
         const args = new Stack<number>()
         const ops: Record<string, (a: number, b: number) => number> = {
@@ -27,4 +26,4 @@ class A extends RPN {
     }
 }
 
-A.run(new A());
+export { A };

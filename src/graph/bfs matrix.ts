@@ -35,17 +35,6 @@ class BFS {
 
         return -1;
     }
-
-    public static main(): void {
-        const grid: number[][] = [
-            [0, 0, 0, 0],
-            [1, 1, 0, 0],
-            [0, 0, 0, 1],
-            [0, 1, 0, 0]
-        ];
-
-        console.log(new BFS().shortestPath(grid));
-    }
 }
 
-BFS.main();
+export { BFS };

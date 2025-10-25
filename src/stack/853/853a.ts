@@ -1,8 +1,7 @@
 /* 853. car fleet */
 // @: stack
-import { Fleet } from "./run";
 
-class A extends Fleet {
+class A {
     carFleet(target: number, position: number[], speed: number[]): number {
         const cars = position.map((pos, i) => [pos, speed[i]]);
         cars.sort((a, b) => b[0] - a[0]);
@@ -24,4 +23,4 @@ class A extends Fleet {
     }
 }
 
-A.run(new A());
+export { A };

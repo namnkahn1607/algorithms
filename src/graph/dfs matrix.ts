@@ -27,17 +27,6 @@ class DFS {
 
         return dfs(0, 0);
     }
-
-    public static main(): void {
-        const grid: number[][] = [
-            [0, 0, 0, 0],
-            [1, 1, 0, 0],
-            [0, 0, 0, 1],
-            [0, 1, 0, 0]
-        ];
-
-        console.log(new DFS().countPaths(grid));
-    }
 }
 
-DFS.main();
+export { DFS };

@@ -1,12 +1,9 @@
 /* 901. online stock span */
 // @: stack
-import { _StockSpanner } from "./run";
 import { Stack } from "datastructures-js";
 
-class StockSpanner extends _StockSpanner {
-    constructor(
-        private stack = new Stack<number[]>()
-    ) { super() }
+class StockSpanner {
+    constructor(private stack = new Stack<number[]>()) {}
 
     next(price: number): number {
         const stack = this.stack;
@@ -21,4 +18,4 @@ class StockSpanner extends _StockSpanner {
     }
 }
 
-StockSpanner.run(new StockSpanner());
+export { StockSpanner };
