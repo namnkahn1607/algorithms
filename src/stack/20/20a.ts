@@ -1,4 +1,4 @@
-/* 20. valid parentheses */
+/* 20a. valid parentheses */
 // @: stack
 import { Stack } from "datastructures-js";
 

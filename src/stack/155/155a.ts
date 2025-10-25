@@ -1,11 +1,12 @@
 /* 155. minimum stack */
 // @: stack
-import { _MinStack } from "./run";
+import { Stack } from "datastructures-js";
 
-class MinStack extends _MinStack {
-    constructor() {
-        super();
-    }
+class MinStack {
+    constructor(
+        protected readonly stack = new Stack<number>(),
+        protected min: number = Number.MAX_VALUE
+    ) {}
 
     push(val: number): void {
         const stack = this.stack;
@@ -43,4 +44,4 @@ class MinStack extends _MinStack {
     }
 }
 
-MinStack.run(new MinStack());
+export { MinStack };

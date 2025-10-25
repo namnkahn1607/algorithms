@@ -1,8 +1,7 @@
 /* 150b. evaluate reverse polish notation */
 // @: abstract syntax tree
-import { RPN } from "./run";
 
-class B extends RPN {
+class B {
     evaluateRPN(tokens: string[]): number {
         if (tokens.length === 0)
             return NaN;
@@ -28,4 +27,4 @@ class B extends RPN {
     }
 }
 
-B.run(new B());
+export { B };

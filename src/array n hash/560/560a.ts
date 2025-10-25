@@ -1,4 +1,4 @@
-/* 560. subarray sum equals k */
+/* 560a. subarray sum equals k */
 // @: array + prefix/suffix
 
 class A {

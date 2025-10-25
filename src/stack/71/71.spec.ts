@@ -1,7 +1,7 @@
-/* 20. valid parentheses */
+/* 71. simplify path */
 
 import { describe, expect, it } from "vitest";
-import { A } from "./20a";
+import { A } from "./71a";
 
 const approaches = [
     { solution: new A() },
@@ -9,17 +9,17 @@ const approaches = [
 
 const testCases = [
     {
-        str: "()[{}]",
-        output: true,
+        path: "/..//_home/a/b/..///",
+        output: "/_home/a",
         description: 'a sample test',
     },
 ];
 
 approaches.forEach(({ solution }) => {
-    describe('Valid Parentheses', () => {
-        testCases.forEach(({ str, output, description }) => {
+    describe("Simplify Path", () => {
+        testCases.forEach(({ path, output, description }) => {
             it(description, () => {
-                const ans = solution.isValid(str);
+                const ans = solution.simplifyPath(path);
 
                 expect(ans).toEqual(output);
             });

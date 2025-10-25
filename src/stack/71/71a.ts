@@ -1,8 +1,7 @@
-/* 71. simplify path */
+/* 71a. simplify path */
 // @: stack
-import { Simplification } from "./run";
 
-class A extends Simplification {
+class A {
     simplifyPath(path: string): string {
         const files: string[] = [];
         let name = "";
@@ -33,4 +32,4 @@ class A extends Simplification {
     }
 }
 
-A.run(new A());
+export { A };

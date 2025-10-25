@@ -1,4 +1,4 @@
-/* 238. product of array except self */
+/* 238a. product of array except self */
 // @: array + prefix/suffix
 
 class A {
