@@ -1,8 +1,7 @@
 /* 912d. sort an array */
 // @: heapsort
-import { ArraySort } from "./run";
 
-class D extends ArraySort {
+class Heapsort {
     sort(arr: number[], L: number, R: number): void {
         const heapify = (i: number, heapEnd: number) => {
             while (2 * i + 1 <= heapEnd) {
@@ -31,4 +30,4 @@ class D extends ArraySort {
     }
 }
 
-D.run(new D());
+export { Heapsort };

@@ -1,8 +1,7 @@
 /* 169a. majority element */
 // @: Boyer-Moore
-import { Majority } from "./run";
 
-class A extends Majority {
+class A {
     majorityElement(arr: number[]): number {
         let [candidate, cnt] = [arr[0], 0];
 
@@ -17,4 +16,4 @@ class A extends Majority {
     }
 }
 
-A.run(new A());
+export { A };

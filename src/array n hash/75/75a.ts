@@ -1,8 +1,7 @@
 /* 75. sort colors */
 // @: Dutch National Flag
-import { ColorOrder } from "./run";
 
-class A extends ColorOrder {
+class A {
     sortColors(colors: number[]): void {
         const swap = (i: number, j: number) => {
             const tmp = colors[i];
@@ -23,4 +22,4 @@ class A extends ColorOrder {
     }
 }
 
-A.run(new A());
+export { A };

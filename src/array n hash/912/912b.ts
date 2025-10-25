@@ -1,8 +1,7 @@
 /* 912b. sort an array */
 // @: quicksort - I
-import { ArraySort } from "./run";
 
-class QuickSort extends ArraySort {
+class Quicksort {
     partition(arr: number[], L: number, R: number): number {
         const swap = (i: number, j: number) => [arr[i], arr[j]] = [arr[j], arr[i]];
         const median = (): number => {
@@ -53,4 +52,4 @@ class QuickSort extends ArraySort {
     }
 }
 
-QuickSort.run(new QuickSort());
+export { Quicksort };

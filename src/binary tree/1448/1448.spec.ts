@@ -1,13 +1,12 @@
 /* 1448. count good nodes in binary tree */
 
 import { describe, expect, it } from "vitest";
+import { BinaryTree, TreeNode } from "../binary tree";
 import { A } from "./1448a";
 import { B } from "./1448b";
-import { BinaryTree, TreeNode } from "../binary tree";
 
 const approaches = [
-    { name: "recursive dfs", solution: new A() },
-    { name: "iterative dfs", solution: new B() },
+    { solution: new A() }, { solution: new B() },
 ];
 
 const testCases = [
@@ -19,8 +18,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Count Good Nodes in Binary Tree - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Count Good Nodes in Binary Tree', () => {
         testCases.forEach(({ tree, output, description }) => {
             it(description, () => {
                 const root: TreeNode | null = BinaryTree.create(tree);

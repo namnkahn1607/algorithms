@@ -1,24 +1,21 @@
 {
   "name": "algorithms",
   "version": "1.0.0",
-  "description": "",
+  "description": "Algorithms in TypeScript",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "vitest"
   },
   "dependencies": {
     "datastructures-js": "^13.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@types/jest": "^30.0.0",
     "@types/lodash": "^4.17.20",
-    "jest": "^30.2.0",
-    "ts-jest": "^29.4.5",
     "typescript": "^5.5.3",
-    "vite": "^7.1.12"
-  },
-  "private": true
+    "vite": "^7.1.12",
+    "vitest": "3.2.4"
+  }
 }

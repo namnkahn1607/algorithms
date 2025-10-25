@@ -2,7 +2,7 @@
 // @: stack
 import { Stack } from "datastructures-js";
 
-class A extends ParenthesisGen {
+class A {
     generateParenthesis(n: number): string[] {
         const stack = new Stack<[string, number, number]>();
         stack.push(["", 0, 0]);

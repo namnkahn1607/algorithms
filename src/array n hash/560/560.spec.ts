@@ -1,7 +1,7 @@
-/* 189. rotate array */
+/* 560. subarray sum equals k */
 
 import { describe, expect, it } from "vitest";
-import { A } from "./189a";
+import { A } from "./560a";
 
 const approaches = [
     { solution: new A() },
@@ -9,20 +9,20 @@ const approaches = [
 
 const testCases = [
     {
-        arr: [1, 2, 3, 4, 5, 6, 7, 8],
-        k: 3,
-        output: [6, 7, 8, 1, 2, 3, 4, 5],
+        arr: [10, 5, 3, -2],
+        k: 8,
+        output: 2,
         description: 'a sample test',
-    }
+    },
 ];
 
 approaches.forEach(({ solution }) => {
-    describe('Rotate Array', () => {
+    describe("Subarray Sum Equals K", () => {
         testCases.forEach(({ arr, k, output, description }) => {
             it(description, () => {
-                solution.rotate(arr, k);
+                const ans = solution.subarraySum(arr, k);
 
-                expect(arr).toEqual(output);
+                expect(ans).toEqual(output);
             });
         });
     });

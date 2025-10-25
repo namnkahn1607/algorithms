@@ -1,9 +1,8 @@
 /* 169b. majority element */
 // @: randomization
-import { Majority } from "./run";
 import _ from "lodash";
 
-class B extends Majority {
+class B {
     majorityElement(arr: number[]): number {
         const m = arr.length;
 
@@ -22,4 +21,4 @@ class B extends Majority {
     }
 }
 
-B.run(new B());
+export { B };

@@ -5,8 +5,8 @@ import { A } from "./22a";
 import { B } from "./22b";
 
 const approaches = [
-    { name: "stack", solution: new A() },
-    { name: "backtrack", solution: new B() },
+    { solution: new A() },
+    { solution: new B() },
 ];
 
 const testCases = [
@@ -17,8 +17,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Generate Parenthesis - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Generate Parenthesis', () => {
         testCases.forEach(({ N, output, description }) => {
             it(description, () => {
                 const ans = solution.generateParenthesis(N);

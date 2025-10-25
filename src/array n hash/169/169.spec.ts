@@ -1,25 +1,27 @@
-/* 1863. sum of all subsets XOR total */
+/* 169. majority element */
 
 import { describe, expect, it } from "vitest";
-import { A } from "./1863a";
+import { A } from "./169a";
+import { B } from "./169b";
 
 const approaches = [
-    { name: 'backtrack', solution: new A() },
+    { solution: new A() },
+    { solution: new B() },
 ];
 
 const testCases = [
     {
-        nums: [3, 4, 5, 6, 7, 8],
-        output: 480,
+        nums: [2, 2, 1, 1, 1, 2, 2],
+        output: 2,
         description: 'a sample test',
     },
 ];
 
 approaches.forEach(({ solution }) => {
-    describe('Sum of All Subsets XOR Total', () => {
+    describe("Majority Element", () => {
         testCases.forEach(({ nums, output, description }) => {
             it(description, () => {
-                const ans = solution.subsetXORSum(nums);
+                const ans = solution.majorityElement(nums);
 
                 expect(ans).toEqual(output);
             });

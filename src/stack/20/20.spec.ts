@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { A } from "./20";
 
 const approaches = [
-    { name: "stack", solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -15,8 +15,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Valid Parentheses - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Valid Parentheses', () => {
         testCases.forEach(({ str, output, description }) => {
             it(description, () => {
                 const ans = solution.isValid(str);

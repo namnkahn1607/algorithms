@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { A } from "./399a";
 
 const approaches = [
-    { name: 'dfs', solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -20,8 +20,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Evaluate Division - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Evaluate Division', () => {
         testCases.forEach((
             { equations, values, queries, output, description }) => {
                 it(description, () => {

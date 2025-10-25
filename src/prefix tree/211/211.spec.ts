@@ -1,5 +1,6 @@
 /* 211. add and search word data structure */
 
+import { describe, expect, it } from "vitest";
 import { WordDictionary } from "./211a";
 
 const commandRunner = {

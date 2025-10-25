@@ -1,8 +1,7 @@
 /* 912a. sort an array */
 // @: mergesort
-import { ArraySort } from "./run";
 
-class MergeSort extends ArraySort {
+class Mergesort {
     merge(arr: number[], L: number, M: number, R: number): void {
         const [size1, size2] = [M - L + 1, R - M];
 
@@ -43,4 +42,4 @@ class MergeSort extends ArraySort {
     }
 }
 
-MergeSort.run(new MergeSort());
+export { Mergesort };

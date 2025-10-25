@@ -2,12 +2,18 @@
   "compilerOptions": {
     "target": "es2022",
     "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "types": ["vitest/globals"],
+    "useDefineForClassFields": true,
     "moduleResolution": "bundler",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "dist",
+    "noEmit": true
   },
   "include": ["src"]
 }

@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { A } from "./90a";
 
 const approaches = [
-    { name: 'backtrack', solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -15,8 +15,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Subsets II - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Subsets II', () => {
         testCases.forEach(({ arr, output, description }) => {
             it(description, () => {
                 const ans = solution.subsetsWithDup(arr);

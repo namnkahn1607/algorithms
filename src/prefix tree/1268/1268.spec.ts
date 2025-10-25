@@ -1,5 +1,6 @@
 /* 1268. search suggestion system */
 
+import { describe, expect, it } from "vitest";
 import { SearchSuggestion } from "./1268a";
 
 const approaches = [

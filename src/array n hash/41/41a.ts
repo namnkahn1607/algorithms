@@ -1,8 +1,7 @@
 /* 41a. first missing positive */
 // @: array
-import { FirstMiss } from "./run";
 
-class A extends FirstMiss {
+class A {
     firstMissingPositive(nums: number[]): number {
         const m = nums.length;
 
@@ -29,4 +28,4 @@ class A extends FirstMiss {
     }
 }
 
-A.run(new A());
+export { A };

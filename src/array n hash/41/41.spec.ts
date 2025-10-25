@@ -1,7 +1,7 @@
-/* 743. network delay time */
+/* 41. first missing positive */
 
 import { describe, expect, it } from "vitest";
-import { A } from "./743a";
+import { A } from "./41a";
 
 const approaches = [
     { solution: new A() },
@@ -9,19 +9,17 @@ const approaches = [
 
 const testCases = [
     {
-        times: [[1, 2, 1], [2, 3, 1], [1, 4, 4], [3, 4, 1]],
-        n: 4,
-        k: 1,
+        nums: [1, 2, 6, 4, 5],
         output: 3,
         description: 'a sample test',
     },
 ];
 
 approaches.forEach(({ solution }) => {
-    describe('Network Delay Time', () => {
-        testCases.forEach(({ times, n, k, output, description }) => {
+    describe("First Missing Positive", () => {
+        testCases.forEach(({ nums, output, description }) => {
             it(description, () => {
-                const ans = solution.networkDelayTime(times, n, k);
+                const ans = solution.firstMissingPositive(nums);
 
                 expect(ans).toEqual(output);
             });

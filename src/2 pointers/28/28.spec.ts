@@ -1,5 +1,6 @@
 /* 28. needle in haystack */
 
+import { describe, expect, it } from "vitest";
 import { A } from "./28a";
 import { B } from "./28b";
 

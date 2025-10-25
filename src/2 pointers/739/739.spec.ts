@@ -1,5 +1,6 @@
 /* 739. daily temperatures */
 
+import { describe, expect, it } from "vitest";
 import { A } from "./739a";
 import { B } from "./739b";
 

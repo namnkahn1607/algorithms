@@ -1,8 +1,7 @@
 /* 229b. majority elements II */
 // @: Boyer-Moore + hash
-import { MajorityII } from "./run";
 
-class B extends MajorityII {
+class B {
     majorityElement(nums: number[]): number[] {
         let cans = new Map<number, number>();
 
@@ -39,4 +38,4 @@ class B extends MajorityII {
     }
 }
 
-B.run(new B());
+export { B };

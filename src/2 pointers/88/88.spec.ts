@@ -1,5 +1,6 @@
 /* 88. merge sorted arrays */
 
+import { describe, expect, it } from "vitest";
 import { A } from "./88a";
 
 const approaches = [

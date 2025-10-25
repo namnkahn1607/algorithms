@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { A } from "./1926";
 
 const approaches = [
-    { name: "bfs", solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -20,8 +20,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Nearest Exit from Entrance in Maze - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe(`Nearest Exit from Entrance in Maze`, () => {
         testCases.forEach(({ maze, entrance, output, description }) => {
             it(description, () => {
                 const ans = solution.nearestExit(maze, entrance);

@@ -1,6 +1,6 @@
 /* 1448a. count good nodes in binary tree */
 // @: binary tree + recursive dfs
-import { BinaryTree, TreeNode } from "../binary tree";
+import { TreeNode } from "../binary tree";
 
 class A {
     goodNodes(root: TreeNode | null): number {

@@ -1,7 +1,7 @@
 /* 22b. generate parentheses */
 // @: backtrack
 
-class B extends ParenthesisGen {
+class B {
     generateParenthesis(n: number): string[] {
         const ans: string[] = [];
         let str: string[] = [];

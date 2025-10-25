@@ -1,9 +1,8 @@
 /* 912c. sort an array (not 2 submit) */
 // @: quicksort - II
-import { ArraySort } from "./run";
 
-class C extends ArraySort {
-    sort(arr: number[], L: number, R: number) {
+class QuicksortII {
+    sort(arr: number[], L: number, R: number): void {
         const swap = (i: number, j: number) =>
             [arr[i], arr[j]] = [arr[j], arr[i]];
 
@@ -43,4 +42,4 @@ class C extends ArraySort {
     }
 }
 
-C.run(new C());
+export { QuicksortII };

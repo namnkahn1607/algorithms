@@ -1,6 +1,6 @@
 /* 1448b. count good nodes in binary tree */
 // @: binary tree + iterative dfs
-import { BinaryTree, TreeNode } from "../binary tree";
+import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 
 class B {

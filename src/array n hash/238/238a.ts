@@ -1,8 +1,7 @@
 /* 238. product of array except self */
 // @: array + prefix/suffix
-import { ProductExceptSelf } from "./run";
 
-class A extends ProductExceptSelf {
+class A {
     productExceptSelf(arr: number[]): number[] {
         const m = arr.length;
         const ans = new Array<number>(m).fill(1);
@@ -22,4 +21,4 @@ class A extends ProductExceptSelf {
     }
 }
 
-A.run(new A());
+export { A };

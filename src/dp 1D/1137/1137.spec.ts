@@ -6,9 +6,9 @@ import { B } from "./1137b";
 import { C } from "./1137c";
 
 const approaches = [
-    { name: 'dp top down', solution: new A() },
-    { name: 'dp bottom up', solution: new B() },
-    { name: 'space optimized dp', solution: new C() },
+    { solution: new A() },
+    { solution: new B() },
+    { solution: new C() },
 ];
 
 const testCases = [
@@ -19,8 +19,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`N-th Fibonacci Number - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('N-th Fibonacci Number', () => {
         testCases.forEach(({ n, output, description }) => {
             it(description, () => {
                 const ans = solution.tribonacci(n);

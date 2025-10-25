@@ -1,8 +1,7 @@
 /* 560. subarray sum equals k */
 // @: array + prefix/suffix
-import { SubarraySumK } from "./run";
 
-class A extends SubarraySumK {
+class A {
     subarraySum(arr: number[], k: number): number {
         const map = new Map<number, number>([[0, 1]]);
         let [prefix, ans] = [0, 0];
@@ -23,4 +22,4 @@ class A extends SubarraySumK {
     }
 }
 
-A.run(new A());
+export { A };

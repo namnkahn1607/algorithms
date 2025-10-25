@@ -1,11 +1,11 @@
 /* 1372. longest zigzag path in binary tree */
 
 import { describe, expect, it } from "vitest";
-import { A } from "./1372";
 import { BinaryTree, TreeNode } from "../binary tree";
+import { A } from "./1372";
 
 const approaches = [
-    { name: "dfs + dp", solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -16,8 +16,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Longest Zigzag Path in Binary Tree - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Longest Zigzag Path in Binary Tree', () => {
         testCases.forEach(({tree, output, description}) => {
             it(description, () => {
                 const root: TreeNode | null = BinaryTree.create(tree);

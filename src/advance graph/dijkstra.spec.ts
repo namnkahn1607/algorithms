@@ -1,5 +1,6 @@
 /* algorithms test: Dijkstra */
 
+import { describe, expect, it } from "vitest";
 import { Dijkstra } from "./dijkstra";
 
 const testCases = [

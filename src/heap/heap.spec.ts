@@ -1,5 +1,6 @@
 /* data structures: Heap */
 
+import { describe, expect, it } from "vitest";
 import { MaxHeap } from "./max heap";
 import { MinHeap } from "./min heap";
 

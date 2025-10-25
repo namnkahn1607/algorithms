@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { A } from "./207a";
 
 const approaches = [
-    { name: 'dfs', solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -19,8 +19,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Course Schedule - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Course Schedule', () => {
         testCases.forEach(({ requisites, numCourse, output, description }) => {
             it(description, () => {
                 const ans = solution.canFinish(numCourse, requisites);
