@@ -43,4 +43,4 @@ class MinHeap extends BinaryHeap {
     }
 }
 
-MinHeap.run(new MinHeap());
+export { MinHeap };

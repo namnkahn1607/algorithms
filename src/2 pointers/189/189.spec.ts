@@ -1,10 +1,9 @@
 /* 189. rotate array */
 
-import { describe, expect, it } from "vitest";
 import { A } from "./189a";
 
 const approaches = [
-    { name: '2 pointers', solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -16,11 +15,12 @@ const testCases = [
     }
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Rotate Array - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Rotate Array', () => {
         testCases.forEach(({ arr, k, output, description }) => {
             it(description, () => {
                 solution.rotate(arr, k);
+
                 expect(arr).toEqual(output);
             });
         });

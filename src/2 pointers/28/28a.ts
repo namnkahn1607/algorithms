@@ -1,7 +1,7 @@
 /* 28a. needle in haystack */
 // @: 2 pointers
 
-class A  {
+class A {
     strStr(haystack: string, needle: string): number {
         const [m, n] = [haystack.length, needle.length];
         let j = 0;

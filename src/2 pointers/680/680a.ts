@@ -1,4 +1,4 @@
-/* 680. valid palindrome II */
+/* 680a. valid palindrome II */
 // @: 2 pointers
 
 class A {

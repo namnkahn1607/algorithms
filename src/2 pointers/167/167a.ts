@@ -1,7 +1,7 @@
 /* 167a. 2 integer sum II */
 // @: 2 pointers
 
-class A  {
+class A {
     twoSum(arr: number[], target: number): number[] {
         let [L, R] = [0, arr.length - 1];
 

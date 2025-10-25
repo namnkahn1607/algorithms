@@ -1,10 +1,9 @@
 /* 680. valid palindrome II */
 
-import { describe, expect, it } from "vitest";
-import { A } from "./680";
+import { A } from "./680a";
 
 const approaches = [
-    { name: '2 pointers', solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -15,11 +14,12 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Valid Palindrome II - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Valid Palindrome II', () => {
         testCases.forEach(({ str, output, description }) => {
             it(description, () => {
                 const ans = solution.validPalindrome(str);
+
                 expect(ans).toEqual(output);
             });
         });

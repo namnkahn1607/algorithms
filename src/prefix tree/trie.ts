@@ -13,32 +13,32 @@ class Trie {
     ) {}
 
     insert(word: string): void {
-        let cur: TrieNode = this.root;
+        let curr: TrieNode = this.root;
 
         for (const c of word) {
-            if (!cur.children.has(c))
-                cur.children.set(c, new TrieNode());
+            if (!curr.children.has(c))
+                curr.children.set(c, new TrieNode());
 
-            cur = cur.children.get(c)!;
+            curr = curr.children.get(c)!;
         }
 
-        cur.terminal = true;
+        curr.terminal = true;
     }
 
     search(word: string, allowPrefix: boolean = false): boolean {
-        let cur: TrieNode = this.root;
+        let curr: TrieNode = this.root;
 
         for (const c of word) {
-            if (!cur.children.has(c))
+            if (!curr.children.has(c))
                 return false;
 
-            cur = cur.children.get(c)!;
+            curr = curr.children.get(c)!;
         }
 
         if (allowPrefix)
             return true;
         
-        return cur.terminal;
+        return curr.terminal;
     }
 }
 

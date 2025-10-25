@@ -1,12 +1,10 @@
 /* 246. asteroid collision */
 
-import { describe, expect, it } from "vitest";
 import { A } from "./246a";
 import { B } from "./246b";
 
 const approaches = [
-    { name: '2 pointers + dp', solution: new A() },
-    { name: 'stack', solution: new B() }
+    { solution: new A() }, { solution: new B() }
 ];
 
 const testCases = [
@@ -17,11 +15,12 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Asteroid Collision - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Asteroid Collision', () => {
         testCases.forEach(({ astr, output, description }) => {
             it(description, () => {
-                const ans = solution.asteroidCollision([...astr]);
+                const ans = solution.asteroidCollision(astr.slice());
+
                 expect(ans).toEqual(output);
             });
         });

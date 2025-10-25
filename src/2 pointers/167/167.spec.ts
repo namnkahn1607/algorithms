@@ -1,10 +1,9 @@
 /* 167. 2 integer sum II */
 
-import { describe, expect, it } from "vitest";
 import { A } from "./167a";
 
 const approaches = [
-    { name: '2 pointers', solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -16,11 +15,12 @@ const testCases = [
     }
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`2 Integer Sum II - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('2 Integer Sum II', () => {
         testCases.forEach(({ arr, target, output, description }) => {
             it(description, () => {
                 const ans = solution.twoSum(arr, target);
+
                 expect(ans).toEqual(output);
             });
         });

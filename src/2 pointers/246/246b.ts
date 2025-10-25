@@ -2,7 +2,7 @@
 // @: stack
 import { Stack } from "datastructures-js";
 
-class B extends AsteroidCollision {
+class B {
     asteroidCollision(astr: number[]): number[] {
         const stack = new Stack<number>();
 

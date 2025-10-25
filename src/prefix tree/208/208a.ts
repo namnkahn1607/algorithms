@@ -1,12 +1,9 @@
-/* 208. implement prefix tree */
+/* 208a. implement prefix tree */
 // @: trie
-import { _PrefixTree } from "./run";
 import { Trie } from "../trie";
 
-class PrefixTree extends _PrefixTree {
-    constructor(private trie = new Trie()) {
-        super();
-    }
+class PrefixTree {
+    constructor(private trie = new Trie()) {}
 
     insert(word: string): void {
         this.trie.insert(word);
@@ -21,4 +18,4 @@ class PrefixTree extends _PrefixTree {
     }
 }
 
-PrefixTree.run(new PrefixTree());
+export { PrefixTree };

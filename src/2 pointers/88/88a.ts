@@ -1,8 +1,8 @@
-/* 88. merge sorted array */
+/* 88a. merge sorted array */
 // @: 2 pointers
 
 class A {
-    merge(nums1: number[], m: number, nums2: number[], n: number) {
+    merge(nums1: number[], m: number, nums2: number[], n: number): void {
         let [i, j, k] = [m - 1, n - 1, m + n - 1];
 
         while (i >= 0 && j >= 0) {

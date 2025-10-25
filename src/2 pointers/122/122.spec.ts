@@ -1,10 +1,9 @@
 /* 122. best time to buy & sell stocks II */
 
-import { describe, expect, it } from "vitest";
-import { A } from "./122";
+import { A } from "./122a";
 
 const approaches = [
-    { name: '2 pointers', solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -15,11 +14,12 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Best Time to Buy & Sell Stocks II - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Best Time to Buy & Sell Stocks II', () => {
         testCases.forEach(({ prices, output, description }) => {
             it(description, () => {
                 const ans = solution.maxProfit(prices);
+                
                 expect(ans).toEqual(output);
             });
         });

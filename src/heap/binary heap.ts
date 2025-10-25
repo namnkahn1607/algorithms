@@ -5,13 +5,17 @@ abstract class BinaryHeap {
 
     protected constructor(nums: number[] = []) {
         for (const num of nums) {
-            this.insert(num);
+            this.array.push(num);
+        }
+
+        for (let i = Math.floor(this.size() / 2); i >= 1; --i) {
+            this.sink(i);
         }
     }
 
-    abstract swim(i: number): void;
+    protected abstract swim(i: number): void;
 
-    abstract sink(i: number): void;
+    protected abstract sink(i: number): void;
 
     insert(val: number): void {
         this.array.push(val);
@@ -22,7 +26,7 @@ abstract class BinaryHeap {
         if (this.isEmpty())
             return undefined;
 
-        const ans = this.top();
+        const ans = this.array[1];
 
         if (this.size() === 1) {
             this.array.pop();
@@ -35,13 +39,6 @@ abstract class BinaryHeap {
         return ans;
     }
 
-    top(): number | undefined {
-        if (this.isEmpty())
-            return undefined;
-
-        return this.array[1];
-    }
-
     toArray(): number[] {
         return this.array.slice(1);
     }
@@ -52,21 +49,6 @@ abstract class BinaryHeap {
 
     isEmpty(): boolean {
         return this.size() === 0;
-    }
-
-    public static run(fig: BinaryHeap): void {
-        const nums: number[] = [2, 4, 6, 8, 10, 12];
-        const k: number = 2;
-
-        for (const num of nums) {
-            fig.insert(num);
-
-            if (fig.size() > k) {
-                fig.remove();
-            }
-        }
-
-        console.log(fig.toArray());
     }
 }
 

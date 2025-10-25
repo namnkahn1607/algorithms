@@ -1,12 +1,10 @@
 /* 739. daily temperatures */
 
-import { describe, expect, it } from "vitest";
 import { A } from "./739a";
 import { B } from "./739b";
 
 const approaches = [
-    { name: '2 pointers', solution: new A() },
-    { name: 'stack', solution: new B() },
+    { solution: new A() }, { solution: new B() },
 ];
 
 const testCases = [
@@ -17,11 +15,12 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Daily Temperatures - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Daily Temperatures', () => {
         testCases.forEach(({ tmps, output, description }) => {
             it(description, () => {
                 const ans = solution.dailyTemperatures(tmps);
+
                 expect(ans).toEqual(output);
             });
         });

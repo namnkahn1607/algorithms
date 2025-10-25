@@ -7,7 +7,14 @@ class MaxHeap extends BinaryHeap {
         super(nums);
     }
 
-    swim(i: number): void {
+    max(): number | undefined {
+        if (this.isEmpty())
+            return undefined;
+
+        return this.array[1];
+    }
+
+    protected swim(i: number): void {
         const heap = this.array;
 
         while (i > 1) {
@@ -22,7 +29,7 @@ class MaxHeap extends BinaryHeap {
         }
     }
 
-    sink(i: number): void {
+    protected sink(i: number): void {
         const heap = this.array;
         const m = this.size() + 1;
 
@@ -43,4 +50,4 @@ class MaxHeap extends BinaryHeap {
     }
 }
 
-MaxHeap.run(new MaxHeap());
+export { MaxHeap };

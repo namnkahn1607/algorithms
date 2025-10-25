@@ -1,7 +1,6 @@
 /* 88. merge sorted arrays */
 
-import { describe, expect, it } from "vitest";
-import { A } from "./88";
+import { A } from "./88a";
 
 const approaches = [
     { name: '2 pointers', solution: new A() },
@@ -16,11 +15,12 @@ const testCases = [
     }
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Merge Sorted Arrays - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Merge Sorted Arrays', () => {
         testCases.forEach(({ nums1, nums2, output, description }) => {
             it(description, () => {
                 solution.merge(nums1, nums1.length, nums2, nums2.length);
+
                 expect(nums1).toEqual(output);
             });
         });

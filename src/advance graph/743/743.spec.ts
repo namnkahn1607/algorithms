@@ -1,10 +1,9 @@
 /* 743. network delay time */
 
-import { describe, expect, it } from "vitest";
 import { A } from "./743a";
 
 const approaches = [
-    { name: 'Dijkstra', solution: new A() },
+    { solution: new A() },
 ];
 
 const testCases = [
@@ -17,8 +16,8 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ name, solution }) => {
-    describe(`Network Delay Time - ${name}`, () => {
+approaches.forEach(({ solution }) => {
+    describe('Network Delay Time', () => {
         testCases.forEach(({ times, n, k, output, description }) => {
             it(description, () => {
                 const ans = solution.networkDelayTime(times, n, k);

@@ -6,17 +6,19 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "test": "vitest"
+    "test": "jest"
   },
   "dependencies": {
     "datastructures-js": "^13.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "vite": "^7.1.12",
-    "vitest": "^4.0.2",
+    "@types/jest": "^30.0.0",
     "@types/lodash": "^4.17.20",
-    "typescript": "^5.5.3"
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.5.3",
+    "vite": "^7.1.12"
   },
   "private": true
 }
