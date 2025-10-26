@@ -1,9 +1,8 @@
-/* 215a. kth largest element in array */
+/* 215a. k-th largest element in array */
 // @: min heap
-import { ArrayKth } from "./run";
 import { MinPriorityQueue } from "datastructures-js";
 
-class A extends ArrayKth {
+class A {
     findKthLargest(nums: number[], k: number): number {
         const queue = new MinPriorityQueue<number>();
 
@@ -18,4 +17,4 @@ class A extends ArrayKth {
     }
 }
 
-A.run(new A());
+export { A };

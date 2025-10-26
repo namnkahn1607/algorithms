@@ -1,9 +1,8 @@
 /* 1046a. last stone weight */
 // @: max heap
-import { StoneWeights } from "./run";
 import { MaxPriorityQueue } from "datastructures-js";
 
-class A extends StoneWeights {
+class A {
     lastStoneWeight(stones: number[]): number {
         const queue = new MaxPriorityQueue<number>();
 
@@ -24,4 +23,4 @@ class A extends StoneWeights {
     }
 }
 
-A.run(new A());
+export { A };

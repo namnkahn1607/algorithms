@@ -1,8 +1,7 @@
-/* 219. contains duplicate 2 */
+/* 219a. contains duplicate II */
 // @: sliding window
-import { ContainsDuplicate } from "./run";
 
-class A extends ContainsDuplicate {
+class A {
     containsNearbyDuplicate(arr: number[], k: number): boolean {
         const set = new Set<number>();
         let L = 0;
@@ -21,4 +20,4 @@ class A extends ContainsDuplicate {
     }
 }
 
-A.run(new A());
+export { A };

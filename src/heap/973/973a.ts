@@ -1,9 +1,8 @@
-/* 973. k closest points to origin */
+/* 973a. k closest points to origin */
 // @: min heap
-import { ClosestPoints } from "./run";
 import { MinPriorityQueue } from "datastructures-js";
 
-class A extends ClosestPoints {
+class A {
     kClosest(points: number[][], k: number): number[][] {
         const ans: number[][] = [];
         const heap = new MinPriorityQueue<number[]>((
@@ -24,4 +23,4 @@ class A extends ClosestPoints {
     }
 }
 
-A.run(new A());
+export { A };

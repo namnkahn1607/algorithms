@@ -1,8 +1,7 @@
-/* 1456. maxima number of vowels in a substr */
+/* 1456a. maxima number of vowels in a substr */
 // @: sliding window
-import { VowelSequence } from "./run";
 
-class A extends VowelSequence {
+class A {
     maxVowels(str: string, k: number): number {
         let [ans, cnt] = [0, 0];
         let L = 0;
@@ -25,4 +24,4 @@ class A extends VowelSequence {
     }
 }
 
-A.run(new A());
+export { A };

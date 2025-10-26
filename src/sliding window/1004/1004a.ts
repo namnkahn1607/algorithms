@@ -1,8 +1,7 @@
-/* 1004. max consecutive ones III */
+/* 1004a. max consecutive ones III */
 // @: sliding window
-import { Consecutive } from "./run";
 
-class A extends Consecutive {
+class A {
     longestOnes(nums: number[], k: number): number {
         let [ans, zeroes] = [0, 0];
         let L = 0;
@@ -23,4 +22,4 @@ class A extends Consecutive {
     }
 }
 
-A.run(new A());
+export { A };

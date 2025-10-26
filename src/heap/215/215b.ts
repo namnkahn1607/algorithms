@@ -1,8 +1,7 @@
 /* 215b. k-th largest element in array */
 // @: quickselect
-import { ArrayKth } from "./run";
 
-class B extends ArrayKth {
+class B {
     findKthLargest(nums: number[], k: number): number {
         const swap = (i: number, j: number) =>
             [nums[i], nums[j]] = [nums[j], nums[i]];
@@ -62,4 +61,4 @@ class B extends ArrayKth {
     }
 }
 
-B.run(new B());
+export { B };

@@ -1,8 +1,7 @@
-/* 3. longest substr without repeating chars */
+/* 3a. longest substr without repeating chars */
 // @: sliding window
-import { NonRepeatingSubstr } from "./run";
 
-class A extends NonRepeatingSubstr {
+class A {
     lengthOfLongestSubstring(str: string): number {
         const map = new Map<string, number>();
         let [ans, L] = [0, 0];
@@ -20,4 +19,4 @@ class A extends NonRepeatingSubstr {
     }
 }
 
-A.run(new A());
+export { A };

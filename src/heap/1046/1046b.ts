@@ -1,9 +1,8 @@
 /* 1046b. last stone weight */
 // @: min heap + simulation
-import { StoneWeights } from "./run";
 import { MinPriorityQueue } from "datastructures-js";
 
-class B extends StoneWeights {
+class B {
     lastStoneWeight(stones: number[]): number {
         const queue = new MinPriorityQueue<number>();
 
@@ -24,4 +23,4 @@ class B extends StoneWeights {
     }
 }
 
-B.run(new B());
+export { B };

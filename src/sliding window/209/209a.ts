@@ -1,8 +1,7 @@
-/* 209. minimum size subarray sum */
+/* 209a. minimum size subarray sum */
 // @: sliding window
-import { MinSubarraySum } from "./run";
 
-class A extends MinSubarraySum {
+class A {
     minSubarrayLen(arr: number[], target: number): number {
         const m: number = arr.length;
         let ans = m + 1;
@@ -22,4 +21,4 @@ class A extends MinSubarraySum {
     }
 }
 
-A.run(new A());
+export { A };

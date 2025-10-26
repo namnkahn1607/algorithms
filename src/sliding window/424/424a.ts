@@ -1,8 +1,7 @@
 /* 424a. longest repeating character replacement */
 // @: sliding window + hash
-import { CharReplace } from "./run";
 
-class A extends CharReplace {
+class A {
     characterReplacement(str: string, k: number): number {
         const base = 'A'.charCodeAt(0);
 
@@ -27,4 +26,4 @@ class A extends CharReplace {
     }
 }
 
-A.run(new A());
+export { A };

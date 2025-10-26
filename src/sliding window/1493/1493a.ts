@@ -1,8 +1,7 @@
-/* 1493. longest subarray of 1's after deleting 1 element */
+/* 1493a. longest subarray of 1's after deleting 1 element */
 // @: sliding window
-import { OneSequence } from "./run";
 
-class A extends OneSequence {
+class A {
     longestSubarray(nums: number[]): number {
         let [ans, zeroes] = [0, 0];
         let L = 0;
@@ -25,4 +24,4 @@ class A extends OneSequence {
     }
 }
 
-A.run(new A());
+export { A };

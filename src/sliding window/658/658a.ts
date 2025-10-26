@@ -1,8 +1,7 @@
 /* 658a. find k closest elements */
 // @: sliding window
-import { ClosestValues } from "./run";
 
-class A extends ClosestValues {
+class A {
     findClosestElements(arr: number[], k: number, x: number): number[] {
         let L = 0;
 
@@ -19,4 +18,4 @@ class A extends ClosestValues {
     }
 }
 
-A.run(new A());
+export { A };
