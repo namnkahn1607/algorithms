@@ -1,9 +1,8 @@
 /* 21b. merge 2 sorted lists */
 // @: linked list + iteration
-import { Merge2Lists } from "./run";
 import { ListNode } from "../linked list";
 
-class B extends Merge2Lists {
+class B {
     mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | null {
         let dummy = new ListNode();
         let curr: ListNode = dummy;
@@ -24,4 +23,4 @@ class B extends Merge2Lists {
     }
 }
 
-B.run(new B());
+export { B };

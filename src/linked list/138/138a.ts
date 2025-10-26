@@ -1,9 +1,8 @@
 /* 138a. copy list with random pointer */
 // @: linked list
-import { CopyRList } from "./run";
 import { _Node } from "../random list";
 
-class A extends CopyRList {
+class A {
     copyRandomList(head: _Node | null): _Node | null {
         if (!head) return null;
 
@@ -28,4 +27,4 @@ class A extends CopyRList {
     }
 }
 
-A.run(new A());
+export { A };

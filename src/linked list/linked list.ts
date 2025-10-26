@@ -8,13 +8,13 @@ class ListNode {
 }
 
 class SinglyLinkedList {
-    public static createSLList(arr: number[]): ListNode | null {
-        const [head, _] = SinglyLinkedList.createSLListWithTail(arr);
+    public static create(arr: number[]): ListNode | null {
+        const [head, _] = SinglyLinkedList.createWithTail(arr);
 
         return head;
     }
 
-    public static createSLListWithTail(arr: number[]): (ListNode | null)[] {
+    public static createWithTail(arr: number[]): (ListNode | null)[] {
         if (arr === null || arr.length === 0)
             return [null, null];
 
@@ -27,16 +27,7 @@ class SinglyLinkedList {
         return [head, tail];
     }
 
-    public static printSLList(head: ListNode | null): void {
-        if (!head) {
-            console.log("empty");
-            return;
-        }
-
-        console.log(SinglyLinkedList.convertToArray(head).join(" "));
-    }
-
-    public static convertToArray(head: ListNode | null): number[] {
+    public static toArray(head: ListNode | null): number[] {
         if (!head) return [];
 
         const ans: number[] = [];

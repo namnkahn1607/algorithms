@@ -15,7 +15,7 @@ class B {
                     ++cnt;
             }
 
-            if (cnt >= Math.trunc(m / 2))
+            if (cnt > Math.trunc(m / 2))
                 return candidate;
         }
     }

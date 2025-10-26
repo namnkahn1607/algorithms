@@ -1,9 +1,8 @@
 /* 2a. add 2 numbers */
 // @: linked list + recursion
-import { Add2Numbers } from "./run";
 import { ListNode } from "../linked list";
 
-class A extends Add2Numbers {
+class A {
     addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
         const add = (rem: number): ListNode | null => {
             if (!l1 && !l2 && rem === 0)
@@ -26,4 +25,4 @@ class A extends Add2Numbers {
     }
 }
 
-A.run(new A());
+export { A };

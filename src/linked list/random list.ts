@@ -9,7 +9,7 @@ class _Node {
 }
 
 class RandomList {
-    public static createRandomList(grid: [number, number | null][]): _Node | null {
+    public static create(grid: [number, number | null][]): _Node | null {
         if (!grid?.length || grid[0] === undefined)
             return null;
 
@@ -27,7 +27,7 @@ class RandomList {
         return nodes[0];
     }
 
-    public static printRandomList(head: _Node | null): void {
+    public static toArray(head: _Node | null): string[] {
         const map = new Map<_Node, number>();
         let curr = head;
         let i = 1;
@@ -45,7 +45,7 @@ class RandomList {
             curr = curr.next;
         }
 
-        console.log(ans.join(" "));
+        return ans;
     }
 }
 

@@ -1,9 +1,9 @@
 /* 23b. merge k sorted lists */
 // @: divide and conquer (iteration)
-import { MergeList } from "./run";
 import { ListNode } from "../linked list";
+import { merge2Lists } from "./23a";
 
-class B extends MergeList {
+class B {
     mergeKLists(lists: Array<ListNode | null>): ListNode | null {
         if (!lists || lists.length === 0)
             return null;
@@ -15,7 +15,7 @@ class B extends MergeList {
                 const l1 = lists[i];
                 const l2 = i + 1 < lists.length ? lists[i + 1] : null;
 
-                mergedLists.push(this.merge2Lists(l1, l2));
+                mergedLists.push(merge2Lists(l1, l2));
             }
 
             lists = mergedLists;
@@ -25,4 +25,4 @@ class B extends MergeList {
     }
 }
 
-B.run(new B());
+export { B };

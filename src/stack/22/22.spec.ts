@@ -5,8 +5,7 @@ import { A } from "./22a";
 import { B } from "./22b";
 
 const approaches = [
-    { solution: new A() },
-    { solution: new B() },
+    { solution: new A() }, { solution: new B() },
 ];
 
 const testCases = [

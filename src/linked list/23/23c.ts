@@ -1,10 +1,9 @@
 /* 23c. merge k sorted lists */
 // @: heap
-import { MergeList } from "./run";
 import { MinPriorityQueue } from "datastructures-js";
 import { ListNode } from "../linked list";
 
-class C extends MergeList {
+class C {
     mergeKLists(lists: Array<ListNode | null>): ListNode | null {
         const minHeap = new MinPriorityQueue<ListNode>(node => node.val);
 
@@ -28,4 +27,4 @@ class C extends MergeList {
     }
 }
 
-C.run(new C());
+export { C };

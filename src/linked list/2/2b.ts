@@ -1,9 +1,8 @@
 /* 2b. add 2 numbers */
 // @: linked list + iteration
-import { Add2Numbers } from "./run";
 import { ListNode } from "../linked list";
 
-class B extends Add2Numbers {
+class B {
     addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
         const dummy = new ListNode();
         let curr: ListNode | null = dummy;
@@ -28,4 +27,4 @@ class B extends Add2Numbers {
     }
 }
 
-B.run(new B());
+export { B };

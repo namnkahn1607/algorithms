@@ -1,17 +1,14 @@
-/* 622. design circular queue */
-// @: linked list
-import { CQueue } from "./run";
+/* 622a. design circular queue */
+// @: array
 
-class CircularQueue extends CQueue {
+class CircularQueue {
     constructor(k: number,
         private array = new Array<number>(k),
         private size = 0,
         private capacity = k,
         private front = 0,
         private rear = -1,
-    ) {
-        super();
-    }
+    ) {}
 
     enQueue(val: number): boolean {
         if (this.isFull())
@@ -49,4 +46,4 @@ class CircularQueue extends CQueue {
     }
 }
 
-CircularQueue.run(new CircularQueue(3));
+export { CircularQueue };
