@@ -1,9 +1,8 @@
 /* 17b. letter combination of a phone number */
 // @: iteration
-import { LetterCombination } from "./run";
 import { Queue } from "datastructures-js";
 
-class B extends LetterCombination {
+class B {
     letterCombinations(digits: string): string[] {
         if (digits === "") return [];
 
@@ -29,4 +28,4 @@ class B extends LetterCombination {
     }
 }
 
-B.run(new B());
+export { B };

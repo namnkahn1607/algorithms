@@ -1,8 +1,7 @@
 /* 46a. permutations */
 // @: optimal backtrack
-import { Permutations } from "./run";
 
-class A extends Permutations {
+class A {
     permutes(nums: number[]): number[][] {
         if (nums.length === 0)
             return [[]];
@@ -30,4 +29,4 @@ class A extends Permutations {
     }
 }
 
-A.run(new A());
+export { A };

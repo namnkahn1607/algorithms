@@ -1,8 +1,7 @@
 /* 40a. combination sum II */
 // @: backtrack
-import { CombinationSum } from "./run";
 
-class A extends CombinationSum {
+class A {
     combinationSum2(candidates: number[], target: number): number[][] {
         candidates.sort((a, b) => a - b);
 
@@ -35,4 +34,4 @@ class A extends CombinationSum {
     }
 }
 
-A.run(new A());
+export { A };

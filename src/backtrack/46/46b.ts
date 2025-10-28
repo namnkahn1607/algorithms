@@ -1,8 +1,7 @@
 /* 46b. permutations */
 // @: iteration
-import { Permutations } from "./run";
 
-class B extends Permutations {
+class B {
     permutes(nums: number[]): number[][] {
         let ans: number[][] = [[]];
 
@@ -24,4 +23,4 @@ class B extends Permutations {
     }
 }
 
-B.run(new B());
+export { B };

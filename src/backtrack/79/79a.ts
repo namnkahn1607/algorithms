@@ -1,8 +1,7 @@
 /* 79. word search */
 // @: backtrack
-import { SearchWord } from "./run";
 
-class A extends SearchWord {
+class A {
     exist(board: string[][], word: string): boolean {
         const [row, col] = [board.length, board[0].length];
         const dir = [[-1, 0], [1, 0], [0, 1], [0, -1]];
@@ -43,4 +42,4 @@ class A extends SearchWord {
     }
 }
 
-A.run(new A());
+export { A };

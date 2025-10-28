@@ -1,8 +1,7 @@
 /* 17a. letter combination of a phone number */
 // @: backtrack
-import { LetterCombination } from "./run";
 
-class A extends LetterCombination {
+class A {
     letterCombinations(digits: string): string[] {
         const ans: string[] = [];
         const chars = [
@@ -33,4 +32,4 @@ class A extends LetterCombination {
     }
 }
 
-A.run(new A());
+export { A };

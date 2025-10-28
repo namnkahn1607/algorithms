@@ -1,8 +1,7 @@
 /* 216. combination sum III */
 // @: backtrack
-import { Combinations } from "./run";
 
-class A extends Combinations {
+class A {
     combinationSum3(k: number, n: number): number[][] {
         const ans: number[][] = [];
 
@@ -30,4 +29,4 @@ class A extends Combinations {
     }
 }
 
-A.run(new A());
+export { A };

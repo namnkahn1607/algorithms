@@ -1,8 +1,7 @@
 /* 77a. combinations */
 // @: backtrack I
-import { Combinations } from "./run";
 
-class A extends Combinations {
+class A {
     combine(n: number, k: number): number[][] {
         const ans: number[][] = [];
 
@@ -28,4 +27,4 @@ class A extends Combinations {
     }
 }
 
-A.run(new A());
+export { A };

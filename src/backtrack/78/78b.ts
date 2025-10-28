@@ -1,8 +1,7 @@
 /* 78b. subsets */
 // @: backtrack + iteration
-import { Subsets } from "./run";
 
-class B extends Subsets {
+class B {
     subsets(nums: number[]): number[][] {
         const ans: number[][] = [[]];
 
@@ -20,4 +19,4 @@ class B extends Subsets {
     }
 }
 
-B.run(new B());
+export { B };
