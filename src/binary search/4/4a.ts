@@ -1,8 +1,7 @@
-/* 4. median of 2 sorted arrays */
+/* 4a. median of 2 sorted arrays */
 // @: binary search
-import { MedianSorted } from "./run";
 
-class A extends MedianSorted {
+class A {
     findMedianSortedArrays(nums1: number[], nums2: number[]): number {
         const [sz1, sz2] = [nums1.length, nums2.length];
 
@@ -50,4 +49,4 @@ class A extends MedianSorted {
     }
 }
 
-A.run(new A());
+export { A };

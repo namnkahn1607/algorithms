@@ -1,8 +1,7 @@
-/* 33. search in rotated sorted array */
+/* 33a. search in rotated sorted array */
 // @: binary search
-import { SearchRotated } from "./run";
 
-class A extends SearchRotated {
+class A {
     search(nums: number[], target: number): number {
         let [L, R] = [0, nums.length - 1];
 
@@ -30,4 +29,4 @@ class A extends SearchRotated {
     }
 }
 
-A.run(new A());
+export { A };

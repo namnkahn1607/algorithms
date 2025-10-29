@@ -1,6 +1,21 @@
-/* 374. guess number higher or lower */
+/* 374a. guess number higher or lower */
 // @: binary search
-import { GuessGame } from "./run";
+
+abstract class GuessGame {
+    private picked: number = 0;
+
+    protected guess(num: number) {
+        if (num > this.picked) return -1;
+        if (num < this.picked) return 1;
+        return 0;
+    }
+
+    abstract guessNum(n: number): number;
+
+    setPicked(num: number): void {
+        this.picked = num;
+    }
+}
 
 class A extends GuessGame {
     guessNum(n: number): number {
@@ -20,4 +35,4 @@ class A extends GuessGame {
     }
 }
 
-A.run(new A());
+export { A };

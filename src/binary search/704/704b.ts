@@ -1,8 +1,7 @@
 /* 704b. binary search */
 // @: recursion
-import { BinarySearch } from "./run";
 
-class B extends BinarySearch {
+class B {
     search(arr: number[], target: number): number {
         const rBS = (L: number, R: number): number => {
             if (L > R) return -1;
@@ -21,4 +20,4 @@ class B extends BinarySearch {
     }
 }
 
-B.run(new B());
+export { B };

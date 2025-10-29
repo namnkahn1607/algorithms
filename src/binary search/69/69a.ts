@@ -1,8 +1,7 @@
-/* 69. sqrt(x) */
+/* 69a. sqrt(x) */
 // @: binary search
-import { SquareRoot } from "./run";
 
-class A extends SquareRoot {
+class A {
     mySqrt(x: number): number {
         let [L, R] = [0, x];
 
@@ -23,4 +22,4 @@ class A extends SquareRoot {
     }
 }
 
-A.run(new A());
+export { A };

@@ -1,9 +1,8 @@
-/* 74. search a 2D matrix */
+/* 74a. search a 2D matrix */
 // @: binary search
-import { MatrixSearch } from "./run";
 import { BS } from "../BS";
 
-class A extends MatrixSearch {
+class A {
     searchMatrix(mat: number[][], target: number): boolean {
         const [row, col] = [mat.length, mat[0].length];
         let [L, R] = [0, row];
@@ -28,4 +27,4 @@ class A extends MatrixSearch {
     }
 }
 
-A.run(new A());
+export { A };
