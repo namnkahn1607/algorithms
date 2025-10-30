@@ -1,10 +1,9 @@
 /* 145b. binary tree postorder traversal */
 // @: iterative dfs I
-import { Postorder } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 
-class B extends Postorder {
+class B {
     postorderTraversal(root: TreeNode | null): number[] {
         const ans: number[] = [];
 
@@ -32,4 +31,4 @@ class B extends Postorder {
     }
 }
 
-B.run(new B());
+export { B };

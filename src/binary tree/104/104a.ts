@@ -1,10 +1,9 @@
 /* 104a. maximum depth of binary tree */
 // @: binary tree + bfs
-import { TreeDepth } from "./run";
 import { TreeNode } from "../binary tree";
 import { Queue } from "datastructures-js";
 
-class A extends TreeDepth {
+class A {
     maxDepth(root: TreeNode | null): number {
         if (!root) return 0;
 
@@ -28,4 +27,4 @@ class A extends TreeDepth {
     }
 }
 
-A.run(new A());
+export { A };

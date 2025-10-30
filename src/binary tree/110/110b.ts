@@ -1,10 +1,9 @@
 /* 110b. balanced binary tree */
 // @: binary tree + dfs
-import { BalancedTree } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 
-class B extends BalancedTree {
+class B {
     isBalanced(root: TreeNode | null): boolean {
         const stack = new Stack<TreeNode>();
         let [curr, lastVisit]: [TreeNode | null, TreeNode | null] = [root, null];
@@ -38,4 +37,4 @@ class B extends BalancedTree {
     }
 }
 
-B.run(new B());
+export { B };

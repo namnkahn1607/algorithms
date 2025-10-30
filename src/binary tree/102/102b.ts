@@ -1,9 +1,8 @@
 /* 102b. binary tree level order traversal */
 // @: binary tree + dfs
-import { LevelOrder } from "./run";
 import { TreeNode } from "../binary tree";
 
-class B extends LevelOrder {
+class B {
     levelOrder(root: TreeNode | null): number[][] {
         const ans: number[][] = [];
 
@@ -25,4 +24,4 @@ class B extends LevelOrder {
     }
 }
 
-B.run(new B());
+export { B };

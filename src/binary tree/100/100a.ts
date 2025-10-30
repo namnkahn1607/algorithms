@@ -1,9 +1,8 @@
 /* 100a. same binary tree */
 // @: binary tree + dfs
-import { SameTree } from "./run";
 import { TreeNode } from "../binary tree";
 
-class A extends SameTree {
+class A {
     isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
         if (!p && !q)
             return true;
@@ -15,4 +14,4 @@ class A extends SameTree {
     }
 }
 
-A.run(new A());
+export { A };

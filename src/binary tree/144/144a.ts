@@ -1,10 +1,9 @@
-/* 144. binary tree preorder traversal */
+/* 144a. binary tree preorder traversal */
 // @: binary tree + dfs
-import { Preorder } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 
-class A extends Preorder {
+class A {
     preorderTraversal(root: TreeNode | null): number[] {
         const ans: number[] = [];
 
@@ -25,4 +24,4 @@ class A extends Preorder {
     }
 }
 
-A.run(new A());
+export { A };

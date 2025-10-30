@@ -1,9 +1,8 @@
-/* 105a. construct binary tree from preorder and inorder traversal */
+/* 105a. construct binary tree from preorder and inorder */
 // @: binary tree + dfs
-import { ConstructTree } from "./run";
 import { TreeNode } from "../binary tree";
 
-class A extends ConstructTree {
+class A {
     buildTree(preorder: number[], inorder: number[]): TreeNode | null {
         const map = new Map<number, number>();
 
@@ -29,4 +28,4 @@ class A extends ConstructTree {
     }
 }
 
-A.run(new A());
+export { A };

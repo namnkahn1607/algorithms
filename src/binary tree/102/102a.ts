@@ -1,10 +1,9 @@
 /* 102a. binary tree level order traversal */
 // @: binary tree + bfs
-import { LevelOrder } from "./run";
 import { TreeNode } from "../binary tree";
 import { Queue } from "datastructures-js";
 
-class A extends LevelOrder {
+class A {
     levelOrder(root: TreeNode | null): number[][] {
         if (!root) return [];
 
@@ -33,4 +32,4 @@ class A extends LevelOrder {
     }
 }
 
-A.run(new A());
+export { A };

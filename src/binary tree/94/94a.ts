@@ -1,10 +1,9 @@
 /* 94a. binary tree inorder traversal */
 // @: iterative dfs
-import { Inorder } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 
-class A extends Inorder {
+class A {
     inorderTraversal(root: TreeNode | null): number[] {
         const ans: number[] = [];
         const stack = new Stack<TreeNode>();
@@ -26,4 +25,4 @@ class A extends Inorder {
     }
 }
 
-A.run(new A());
+export { A };

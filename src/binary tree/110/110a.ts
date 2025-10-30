@@ -1,9 +1,8 @@
 /* 110a. balanced binary tree */
 // @: binary tree + dfs
-import { BalancedTree } from "./run";
 import { TreeNode } from "../binary tree";
 
-class A extends BalancedTree {
+class A {
     isBalanced(root: TreeNode | null): boolean {
         const balancedNode = (node: TreeNode | null): number => {
             if (!node) return 0;
@@ -26,4 +25,4 @@ class A extends BalancedTree {
     }
 }
 
-A.run(new A());
+export { A };

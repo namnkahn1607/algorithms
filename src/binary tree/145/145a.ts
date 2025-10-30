@@ -1,10 +1,9 @@
-/* 145. binary tree postorder traversal */
+/* 145a. binary tree postorder traversal */
 // @: invert binary tree + reverse output
-import { Postorder } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 
-class A extends Postorder {
+class A {
     postorderTraversal(root: TreeNode | null): number[] {
         const ans: number[] = [];
 
@@ -25,4 +24,4 @@ class A extends Postorder {
     }
 }
 
-A.run(new A());
+export { A };
