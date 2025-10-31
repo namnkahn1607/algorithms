@@ -1,9 +1,8 @@
 /* 701b. insert into BST */
 // @: bst + iterative dfs
-import { InsertBST } from "./run";
 import { TreeNode } from "../BST";
 
-class B extends InsertBST {
+class B {
     insertIntoBST(root: TreeNode | null, x: number): TreeNode | null {
         let prev: TreeNode | null = null;
         let curr = root;
@@ -33,4 +32,4 @@ class B extends InsertBST {
     }
 }
 
-B.run(new B());
+export { B };

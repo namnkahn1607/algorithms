@@ -1,10 +1,9 @@
 /* 230a. k-th smallest integer in BST */
 // @: bst + iterative dfs
-import { MinWithinBST } from "./run";
 import { TreeNode } from "../BST";
 import { Stack } from "datastructures-js";
 
-class A extends MinWithinBST {
+class A {
     kthSmallest(root: TreeNode | null, k: number): number {
         const stack = new Stack<TreeNode>();
         let curr = root;
@@ -31,4 +30,4 @@ class A extends MinWithinBST {
     }
 }
 
-A.run(new A());
+export { A };

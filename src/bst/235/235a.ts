@@ -1,9 +1,8 @@
 /* 235a. lowest common ancestor of BST */
 // @: bst + recursive dfs
-import { LCAofBST } from "./run";
 import { TreeNode } from "../BST";
 
-class A extends LCAofBST {
+class A {
     lowestCommonAncestor(
         root: TreeNode | null, p: TreeNode | null, q: TreeNode | null
     ): TreeNode | null {
@@ -19,4 +18,4 @@ class A extends LCAofBST {
     }
 }
 
-A.run(new A());
+export { A };

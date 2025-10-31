@@ -1,10 +1,9 @@
 /* 700b. search in a BST */
 // @: bst + iterative dfs
-import { searchBST } from "./run";
 import { TreeNode } from "../BST";
 import { Stack } from "datastructures-js";
 
-class B extends searchBST {
+class B {
     searchBST(root: TreeNode | null, val: number): TreeNode | null {
         const stack = new Stack<TreeNode | null>();
         let curr = root;
@@ -27,4 +26,4 @@ class B extends searchBST {
     }
 }
 
-B.run(new B());
+export { B };

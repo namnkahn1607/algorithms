@@ -1,9 +1,8 @@
 /* 230b. k-th smallest integer in BST */
 // @: bst + recursive dfs
-import { MinWithinBST } from "./run";
 import { TreeNode } from "../BST";
 
-class B extends MinWithinBST {
+class B {
     kthSmallest(root: TreeNode | null, k: number): number {
         const ans: number[] = [k, 0];
 
@@ -29,4 +28,4 @@ class B extends MinWithinBST {
     }
 }
 
-B.run(new B());
+export { B };

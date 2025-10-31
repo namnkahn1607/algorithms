@@ -1,10 +1,9 @@
 /* 199a. binary tree right side view */
 // @: binary tree + bfs
-import { RightView } from "./run";
 import { TreeNode } from "../binary tree";
 import { Deque } from "datastructures-js";
 
-class A extends RightView {
+class A {
     rightSideView(root: TreeNode | null): number[] {
         if (!root) return [];
 
@@ -27,4 +26,4 @@ class A extends RightView {
     }
 }
 
-A.run(new A());
+export { A };

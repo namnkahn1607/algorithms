@@ -1,9 +1,8 @@
-/* 98. validate binary search tree */
+/* 98a. validate binary search tree */
 // @: bst + dfs
-import { ValidateBST } from "./run";
 import { TreeNode } from "../BST";
 
-class A extends ValidateBST {
+class A {
     isValidBST(root: TreeNode | null): boolean {
         const validNode = (
             node: TreeNode | null, L: number, R: number
@@ -26,4 +25,4 @@ class A extends ValidateBST {
     }
 }
 
-A.run(new A());
+export { A };

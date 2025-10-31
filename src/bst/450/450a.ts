@@ -1,9 +1,8 @@
-/* 450. delete node in a BST */
+/* 450a. delete node in a BST */
 // @: bst + dfs
-import { DelNode } from "./run";
 import { TreeNode } from "../BST";
 
-class A extends DelNode {
+class A {
     deleteNode(root: TreeNode | null, key: number): TreeNode | null {
         if (!root) return null;
 
@@ -30,4 +29,4 @@ class A extends DelNode {
     }
 }
 
-A.run(new A());
+export { A };

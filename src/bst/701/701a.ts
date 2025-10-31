@@ -1,9 +1,8 @@
 /* 701a. insert into BST */
 // @: bst + recursive dfs
-import { InsertBST } from "./run";
 import { TreeNode } from "../BST";
 
-class A extends InsertBST {
+class A {
     insertIntoBST(root: TreeNode | null, x: number): TreeNode | null {
         if (!root) {
             return new TreeNode(x);
@@ -19,4 +18,4 @@ class A extends InsertBST {
     }
 }
 
-A.run(new A());
+export { A };

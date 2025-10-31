@@ -1,9 +1,8 @@
 /* 700a. search in a BST */
 // @: bst + recursive dfs
-import { searchBST } from "./run";
 import { TreeNode } from "../BST";
 
-class A extends searchBST {
+class A {
     searchBST(root: TreeNode | null, val: number): TreeNode | null {
         if (!root) return null;
 
@@ -16,4 +15,4 @@ class A extends searchBST {
     }
 }
 
-A.run(new A());
+export { A };

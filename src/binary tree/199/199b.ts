@@ -1,9 +1,8 @@
 /* 199b. binary tree right side view */
 // @: binary tree + recursive dfs
-import { RightView } from "./run";
 import { TreeNode } from "../binary tree";
 
-class B extends RightView {
+class B {
     rightSideView(root: TreeNode | null): number[] {
         const ans: number[] = [];
 
@@ -23,4 +22,4 @@ class B extends RightView {
     }
 }
 
-B.run(new B());
+export { B };
