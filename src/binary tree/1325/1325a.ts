@@ -1,9 +1,8 @@
 /* 1325a. delete leaves with a given value */
 // @: binary tree + recursive dfs
-import { LeavesRemoval } from "./run";
 import { TreeNode } from "../binary tree";
 
-class A extends LeavesRemoval {
+class A {
     removeLeafNodes(root: TreeNode | null, target: number): TreeNode | null {
         if (!root) return null;
 
@@ -17,4 +16,4 @@ class A extends LeavesRemoval {
     }
 }
 
-A.run(new A());
+export { A };

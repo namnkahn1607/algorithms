@@ -1,9 +1,8 @@
 /* 226b. invert binary tree */
 // @: binary tree + recursive dfs
-import { Inversion } from "./run";
 import { TreeNode } from "../binary tree";
 
-class B extends Inversion {
+class B {
     invertTree(root: TreeNode | null): TreeNode | null {
         if (!root) return null;
 
@@ -15,4 +14,4 @@ class B extends Inversion {
     }
 }
 
-B.run(new B());
+export { B };

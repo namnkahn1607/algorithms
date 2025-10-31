@@ -1,10 +1,9 @@
 /* 543b. diameter of binary tree */
 // @: binary tree + iterative dfs
-import { DiameterTree } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 
-class B extends DiameterTree {
+class B {
     diameterOfBinaryTree(root: TreeNode | null): number {
         const stack = new Stack<TreeNode>();
         const heights = new Stack<number>();
@@ -39,4 +38,4 @@ class B extends DiameterTree {
     }
 }
 
-B.run(new B());
+export { B };

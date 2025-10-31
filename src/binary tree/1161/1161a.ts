@@ -1,10 +1,9 @@
-/* 1161. maximum level sum of a binary tree */
+/* 1161a. maximum level sum of a binary tree */
 // @: binary tree + bfs
-import { MaxLevelSum } from "./run";
 import { TreeNode } from "../binary tree";
 import { Queue } from "datastructures-js";
 
-class A extends MaxLevelSum {
+class A {
     maxLevelSum(root: TreeNode | null): number {
         if (!root) return -1;
 
@@ -38,4 +37,4 @@ class A extends MaxLevelSum {
     }
 }
 
-A.run(new A());
+export { A };

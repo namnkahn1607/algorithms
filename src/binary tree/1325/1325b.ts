@@ -1,10 +1,9 @@
 /* 1325b. delete leaves with a given value */
 // @: binary tree + iterative dfs
-import { LeavesRemoval } from "./run";
 import { TreeNode } from "../binary tree";
 import { Stack } from "datastructures-js";
 
-class B extends LeavesRemoval {
+class B {
     removeLeafNodes(root: TreeNode | null, target: number): TreeNode | null {
         const stack = new Stack<TreeNode>();
         let curr: TreeNode | null = root;
@@ -48,4 +47,4 @@ class B extends LeavesRemoval {
     }
 }
 
-B.run(new B());
+export { B };

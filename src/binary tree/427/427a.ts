@@ -1,9 +1,8 @@
-/* 427. construct quad tree */
+/* 427a. construct quad tree */
 // @: divide n conquer
-import { ConstructQuadTree } from "./run";
 import { _Node } from "../quad tree";
 
-class A extends ConstructQuadTree {
+class A {
     construct(grid: number[][]): _Node {
         const dfs = (R: number, C: number, size: number): _Node => {
             if (size === 1)
@@ -37,4 +36,4 @@ class A extends ConstructQuadTree {
     }
 }
 
-A.run(new A());
+export { A };

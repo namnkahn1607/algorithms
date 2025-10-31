@@ -2,7 +2,7 @@
 
 import { Queue } from "datastructures-js";
 
-export class _Node {
+class _Node {
     constructor(
         public val: boolean = false,
         public isLeaf: boolean = false,
@@ -13,12 +13,9 @@ export class _Node {
     ) {}
 }
 
-export class QuadTree {
-    public static printQuadTree(root: _Node | null): void {
-        if (!root) {
-            console.log("empty");
-            return;
-        }
+class QuadTree {
+    public static toArray(root: _Node | null): string[] {
+        if (!root) return [];
 
         const ans: string[] = [];
         const queue = new Queue<_Node>([root]);
@@ -35,6 +32,8 @@ export class QuadTree {
             }
         }
 
-        console.log(ans.join(" "));
+        return ans;
     }
 }
+
+export { _Node, QuadTree };

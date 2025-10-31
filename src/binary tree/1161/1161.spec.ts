@@ -1,33 +1,31 @@
-/* 226. invert binary tree */
+/* 1161. maximum level sum of a binary tree */
 
 import { describe, expect, it } from "vitest";
 import { BinaryTree, TreeNode } from "../binary tree";
-import { A } from "./226a";
-import { B } from "./226b";
-import { C } from "./226c";
+import { A } from "./1161a";
 
 const approaches = [
     { solution: new A() },
-    { solution: new B() },
-    { solution: new C() },
 ];
 
 const testCases = [
     {
-        tree: [1, 2, 3, 4, 5, 6, 7],
-        output: [1, 3, 2, 7, 6, 5, 4],
+        tree: [
+            989, null, 10250, 98693, -89388, null, null, null, -32127
+        ],
+        output: 2,
         description: 'a sample test',
     },
 ];
 
 approaches.forEach(({ solution }) => {
-    describe("Invert Binary Tree", () => {
+    describe("Maximum Level Sum of a Binary Tree", () => {
         testCases.forEach(({ tree, output, description }) => {
             it(description, () => {
                 const root: TreeNode | null = BinaryTree.create(tree);
-                const ans = solution.invertTree(root);
+                const ans = solution.maxLevelSum(root);
 
-                expect(BinaryTree.toArray(ans)).toEqual(output);
+                expect(ans).toEqual(output);
             });
         });
     });

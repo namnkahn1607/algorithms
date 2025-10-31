@@ -1,9 +1,8 @@
 /* 572a. subtree of another tree */
 // @: binary tree + dfs
-import { Subtree } from "./run";
 import { TreeNode } from "../binary tree";
 
-class A extends Subtree {
+class A {
     isSubtree(root: TreeNode | null, subRoot: TreeNode | null): boolean {
         if (!root) return false;
 
@@ -28,4 +27,4 @@ class A extends Subtree {
     }
 }
 
-A.run(new A());
+export { A };

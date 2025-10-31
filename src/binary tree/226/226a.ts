@@ -1,10 +1,9 @@
 /* 226a. invert binary tree */
 // @: binary tree + bfs
-import { Inversion } from "./run";
 import { TreeNode } from "../binary tree";
 import { Queue } from "datastructures-js";
 
-class A extends Inversion {
+class A {
     invertTree(root: TreeNode | null): TreeNode | null {
         const queue = new Queue<TreeNode | null>([root]);
 
@@ -22,4 +21,4 @@ class A extends Inversion {
     }
 }
 
-A.run(new A());
+export { A };

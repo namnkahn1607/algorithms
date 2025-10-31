@@ -1,9 +1,8 @@
 /* 543a. diameter of binary tree */
 // @: binary tree + recursive dfs
-import { DiameterTree } from "./run";
 import { TreeNode } from "../binary tree";
 
-class A extends DiameterTree {
+class A {
     diameterOfBinaryTree(root: TreeNode | null): number {
         let diameter = 0;
 
@@ -24,4 +23,4 @@ class A extends DiameterTree {
     }
 }
 
-A.run(new A());
+export { A };

@@ -1,9 +1,8 @@
-/* 872. leaf similar tree */
+/* 872a. leaf similar tree */
 // @: binary tree + dfs
-import { SimilarLeaves } from "./run";
 import { TreeNode } from "../binary tree";
 
-class A extends SimilarLeaves {
+class A {
     leafSimilar(root1: TreeNode | null, root2: TreeNode | null): boolean {
         const [leaves1, leaves2] = [[], []];
 
@@ -24,4 +23,4 @@ class A extends SimilarLeaves {
     }
 }
 
-A.run(new A());
+export { A };
