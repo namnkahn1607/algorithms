@@ -1,8 +1,7 @@
 /* 198a. house robber */
 // @: dp (bottom up)
-import { Robber } from "./run";
 
-class A extends Robber {
+class A {
     rob(nums: number[]): number {
         const m = nums.length;
 
@@ -20,4 +19,4 @@ class A extends Robber {
     }
 }
 
-A.run(new A());
+export { A };

@@ -1,4 +1,4 @@
-/* 155. minimum stack */
+/* 155a. minimum stack */
 // @: stack
 import { Stack } from "datastructures-js";
 

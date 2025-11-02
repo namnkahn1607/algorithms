@@ -1,8 +1,7 @@
 /* 70a. climbing stairs */
 // @: dp (top down)
-import { StairsClimb } from "./run";
 
-class A extends StairsClimb {
+class A {
     climbStairs(n: number): number {
         const cache = new Array(n + 1).fill(-1);
 
@@ -19,4 +18,4 @@ class A extends StairsClimb {
     }
 }
 
-A.run(new A());
+export { A };

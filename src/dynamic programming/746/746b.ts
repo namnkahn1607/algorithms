@@ -1,8 +1,7 @@
 /* 746b. min cost climbing stairs */
 // @: dp (top down)
-import { StairCost } from "./run";
 
-class B extends StairCost {
+class B {
     minCostClimbingStairs(cost: number[]): number {
         const m = cost.length;
         const cache = new Array(m).fill(-1);
@@ -21,4 +20,4 @@ class B extends StairCost {
     }
 }
 
-B.run(new B());
+export { B };

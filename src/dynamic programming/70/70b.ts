@@ -1,8 +1,7 @@
 /* 70b. climbing stairs */
 // @: dp (bottom up)
-import { StairsClimb } from "./run";
 
-class B extends StairsClimb {
+class B {
     climbStairs(n: number): number {
         const dp = [1, 2];
 
@@ -16,4 +15,4 @@ class B extends StairsClimb {
     }
 }
 
-B.run(new B());
+export { B };

@@ -1,4 +1,4 @@
-/* 1268. search suggestion system */
+/* 1268a. search suggestion system */
 // @: trie
 import { Trie, TrieNode } from "../trie";
 

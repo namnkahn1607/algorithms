@@ -21,7 +21,6 @@ class Astar {
             ? (pos: number[]) => Math.max(N - 1 - pos[0], N - 1 - pos[1])
             : (pos: number[]) => N - 1 - pos[0] + N - 1 - pos[1];
 
-        const closed = new Set<string>();
         const opened = new MinPriorityQueue<[number[], number]>(
             item => {
                 const [pos, g] = item;
@@ -29,21 +28,19 @@ class Astar {
             }
         );
         opened.enqueue([start, 0]);
-        
+
         const gCost = new Map<string, number>();
         gCost.set(toKey(start), 0);
 
         while (!opened.isEmpty()) {
-            const [curr, _] = opened.dequeue()!;
+            const [curr, currG] = opened.dequeue()!;
             const currKey = toKey(curr);
 
-            if (closed.has(currKey))
+            if (currG > gCost.get(currKey)!)
                 continue;
 
             if (curr[0] === goal[0] && curr[1] === goal[1])
-                return gCost.get(currKey)! + 1;
-
-            closed.add(currKey);
+                return currG + 1;
 
             for (let d = 0; d < maxDirs; d++) {
                 const newR = curr[0] + dirs[d];
@@ -53,10 +50,10 @@ class Astar {
                 if (newR < 0 || newR >= N || newC < 0 || newC >= N)
                     continue;
 
-                if (grid[newR][newC] !== 0 || closed.has(neiKey))
+                if (grid[newR][newC] !== 0)
                     continue;
 
-                const newG = gCost.get(currKey)! + 1;
+                const newG = currG + 1;
 
                 if (!gCost.has(neiKey) || newG < gCost.get(neiKey)!) {
                     gCost.set(neiKey, newG);
