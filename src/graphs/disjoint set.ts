@@ -1,4 +1,4 @@
-/* data structures: Disjoint Set */
+/* data structures: Union Find */
 // union by rank
 
 class DisjointSet {
@@ -15,11 +15,11 @@ class DisjointSet {
         }
     }
 
-    find(x: number): number {
-        if (this.par[x] !== x)
-            this.par[x] = this.find(this.par[x]);
+    find(i: number): number {
+        if (this.par[i] !== i)
+            this.par[i] = this.find(this.par[i]);
 
-        return this.par[x];
+        return this.par[i];
     }
 
     union(x: number, y: number): boolean {
