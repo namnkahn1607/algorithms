@@ -1,9 +1,8 @@
 /* 261b. graph valid tree */
 // @: graph + bfs
-import { GraphTree } from "./run";
 import { Queue } from "datastructures-js";
 
-class B extends GraphTree {
+class B {
     validTree(n: number, edges: number[][]): boolean {
         if (edges.length > n - 1)
             return false;
@@ -39,4 +38,4 @@ class B extends GraphTree {
     }
 }
 
-B.run(new B());
+export { B };

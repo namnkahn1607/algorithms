@@ -1,9 +1,8 @@
 /* 133a. clone graph */
 // @: dfs
-import { CloneGraph } from "./main";
 import { _Node } from "../graph";
 
-class A extends CloneGraph {
+class A {
     cloneGraph(node: _Node | null): _Node | null {
         if (!node) return null;
 
@@ -28,4 +27,4 @@ class A extends CloneGraph {
     }
 }
 
-A.run(new A());
+export { A };

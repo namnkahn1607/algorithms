@@ -1,9 +1,8 @@
 /* 286a. walls and gates */
 // @: multi-source bfs
-import { WallGates } from "./run";
 import { Queue } from "datastructures-js";
 
-class A extends WallGates {
+class A {
     wallsAndGates(grid: number[][]): void {
         const [row, col] = [grid.length, grid[0].length];
         const dirs = [[0, -1], [-1, 0], [0, 1], [1, 0]];
@@ -34,4 +33,4 @@ class A extends WallGates {
     }
 }
 
-A.run(new A());
+export { A };

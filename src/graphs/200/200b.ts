@@ -1,9 +1,8 @@
 /* 200b. number of islands */
 // @: bfs
-import { IsLandMap } from "./run";
 import { Queue } from "datastructures-js";
 
-class B extends IsLandMap {
+class B {
     numIslands(grid: string[][]): number {
         const [row, col] = [grid.length, grid[0].length];
         const dirs = [[0, -1], [-1, 0], [0, 1], [1, 0]];
@@ -39,4 +38,4 @@ class B extends IsLandMap {
     }
 }
 
-B.run(new B());
+export { B };

@@ -1,10 +1,9 @@
 /* 133b. clone graph */
 // @: bfs
-import { CloneGraph } from "./main";
 import { _Node } from "../graph";
 import { Queue } from "datastructures-js";
 
-class B extends CloneGraph {
+class B {
     cloneGraph(node: _Node | null): _Node | null {
         if (!node) return null;
 
@@ -31,4 +30,4 @@ class B extends CloneGraph {
     }
 }
 
-B.run(new B());
+export { B };

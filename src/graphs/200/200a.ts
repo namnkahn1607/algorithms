@@ -1,8 +1,7 @@
 /* 200a. number of islands */
 // @: dfs
-import { IsLandMap } from "./run";
 
-class A extends IsLandMap {
+class A {
     numIslands(grid: string[][]): number {
         const [row, col] = [grid.length, grid[0].length];
         const dirs = [[0, -1], [-1, 0], [0, 1], [1, 0]];
@@ -33,4 +32,4 @@ class A extends IsLandMap {
     }
 }
 
-A.run(new A());
+export { A };

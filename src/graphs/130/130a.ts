@@ -1,13 +1,12 @@
 /* 130a. surrounded regions */
 // @: dfs
-import { XO } from "./run";
 
-class A extends XO {
-    solve(board: string[][]) {
+class A {
+    solve(board: string[][]): void {
         const [row, col] = [board.length, board[0].length];
         const dirs = [[-1, 0], [0, -1], [1, 0], [0, 1]];
 
-        const dfs = (R: number, C: number): void => {
+        const dfs = (R: number, C: number) => {
             if (R === row || C === col ||
                 Math.min(R, C) < 0 || board[R][C] !== "O")
                 return;
@@ -39,4 +38,4 @@ class A extends XO {
     }
 }
 
-A.run(new A());
+export { A };

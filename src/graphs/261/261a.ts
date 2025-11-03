@@ -1,8 +1,7 @@
 /* 261a. graph valid tree */
 // @: graph + dfs
-import { GraphTree } from "./run";
 
-class A extends GraphTree {
+class A {
     validTree(n: number, edges: number[][]): boolean {
         if (edges.length > n - 1)
             return false;
@@ -39,4 +38,4 @@ class A extends GraphTree {
     }
 }
 
-A.run(new A());
+export { A };

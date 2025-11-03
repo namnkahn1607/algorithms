@@ -1,14 +1,13 @@
 /* 130b. surrounded regions */
 // @: multi-source bfs
-import { XO } from "./run";
 import { Queue } from "datastructures-js";
 
-class B extends XO {
-    solve(board: string[][]) {
+class B {
+    solve(board: string[][]): void {
         const [row, col] = [board.length, board[0].length];
         const dirs = [[-1, 0], [0, -1], [1, 0], [0, 1]];
 
-        const capture = (): void => {
+        const capture = () => {
             const queue = new Queue<number[]>();
 
             for (let R = 0; R < row; ++R) {
@@ -49,4 +48,4 @@ class B extends XO {
     }
 }
 
-B.run(new B());
+export { B };
