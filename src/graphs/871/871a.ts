@@ -1,8 +1,7 @@
 /* 871a. keys and rooms */
 // @: dfs
-import { KeyRoom } from "./run";
 
-class A extends KeyRoom {
+class A {
     canVisitAllRooms(rooms: number[][]): boolean {
         const visited = new Set<number>();
 
@@ -21,4 +20,4 @@ class A extends KeyRoom {
     }
 }
 
-A.run(new A());
+export { A };

@@ -1,9 +1,8 @@
 /* 994. rotting fruit */
 // @: bfs
-import { DomainExpansion } from "./run";
 import { Queue } from "datastructures-js";
 
-class A extends DomainExpansion {
+class A {
     fruitRotting(grid: number[][]): number {
         const [row, col] = [grid.length, grid[0].length];
         const dirs = [[0, -1], [-1, 0], [0, 1], [1, 0]];
@@ -46,4 +45,4 @@ class A extends DomainExpansion {
     }
 }
 
-A.run(new A());
+export { A };

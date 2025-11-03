@@ -1,8 +1,7 @@
 /* 997. find the town judge */
 // @: indegree & outdegree
-import { TownJudge } from "./run";
 
-class A extends TownJudge {
+class A {
     findJudge(n: number, trust: number[][]): number {
         const delta = new Array<number>(n + 1).fill(0);
 
@@ -20,4 +19,4 @@ class A extends TownJudge {
     }
 }
 
-A.run(new A());
+export { A };

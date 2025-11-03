@@ -1,7 +1,7 @@
 /* 1926. nearest exit from entrance in maze */
 
 import { describe, expect, it } from "vitest";
-import { A } from "./1926";
+import { A } from "./1926a";
 
 const approaches = [
     { solution: new A() },

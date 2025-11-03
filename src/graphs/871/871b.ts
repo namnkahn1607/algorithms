@@ -1,9 +1,8 @@
 /* 871b. keys and rooms */
 // @: bfs
-import { KeyRoom } from "./run";
 import { Queue } from "datastructures-js";
 
-class B extends KeyRoom {
+class B {
     canVisitAllRooms(rooms: number[][]): boolean {
         const visited = new Set<number>();
         const queue = new Queue<number>([0]);
@@ -22,4 +21,4 @@ class B extends KeyRoom {
     }
 }
 
-B.run(new B());
+export { B };

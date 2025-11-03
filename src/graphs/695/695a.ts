@@ -1,8 +1,7 @@
 /* 695a. max area of island */
 // @: dfs
-import { AreaIsland } from "./run";
 
-class A extends AreaIsland {
+class A {
     maxAreaOfIsland(grid: number[][]): number {
         const [row, col] = [grid.length, grid[0].length];
         const dirs = [[0, -1], [-1, 0], [0, 1], [1, 0]];
@@ -34,4 +33,4 @@ class A extends AreaIsland {
     }
 }
 
-A.run(new A());
+export { A };

@@ -1,8 +1,7 @@
-/* 953. verify an alien dictionary */
-// @:
-import { AlienDict } from "./run";
+/* 953a. verify an alien dictionary */
+// @: wat is this?
 
-class A extends AlienDict {
+class A {
     isAlienSorted(words: string[], order: string): boolean {
         const ord = new Map<string, number>();
 
@@ -30,4 +29,4 @@ class A extends AlienDict {
     }
 }
 
-A.run(new A());
+export { A };

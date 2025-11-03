@@ -1,9 +1,8 @@
 /* 695b. max area of island */
 // @: bfs
-import { AreaIsland } from "./run";
 import { Queue } from "datastructures-js";
 
-class B extends AreaIsland {
+class B {
     maxAreaOfIsland(grid: number[][]): number {
         const [row, col] = [grid.length, grid[0].length];
         const dirs = [[0, -1], [-1, 0], [0, 1], [1, 0]];
@@ -41,4 +40,4 @@ class B extends AreaIsland {
     }
 }
 
-B.run(new B());
+export { B };
