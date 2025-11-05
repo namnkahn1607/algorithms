@@ -1,5 +1,5 @@
 /* advanced algorithms: A* Search */
-// shortest path from top left to bottom right
+// @: standard tolerance
 import { MinPriorityQueue } from "datastructures-js";
 
 class Astar {

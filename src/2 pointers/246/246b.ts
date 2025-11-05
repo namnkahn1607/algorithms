@@ -8,16 +8,11 @@ class B {
 
         for (let a of astr) {
             while (!stack.isEmpty() && a < 0 && stack.peek()! > 0) {
-                const sum = stack.peek()! + a;
+                const diff = stack.peek()! + a;
 
-                if (sum < 0) {
-                    stack.pop();
-                } else {
-                    if (sum === 0) stack.pop();
-
-                    a = 0;
-                    break;
-                }
+                if (diff > 0) { a = 0; break; }
+                if (diff === 0) { a = 0; stack.pop(); break; }
+                stack.pop();
             }
 
             if (a !== 0) {

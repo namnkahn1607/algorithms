@@ -9,15 +9,9 @@ class A {
             while (i >= 0 && a < 0 && astr[i] > 0) {
                 const diff = astr[i] + a;
 
-                if (diff < 0) {
-                    --i;
-                } else {
-                    if (diff === 0)
-                        --i;
-
-                    a = 0;
-                    break;
-                }
+                if (diff > 0) { a = 0; break; }
+                if (diff === 0)  { a = 0; --i; break; }
+                --i;
             }
 
             if (a !== 0) {
