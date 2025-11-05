@@ -12,7 +12,7 @@ const testCases = [
     {
         astr: [2, 4, -4, 2],
         output: [2, 2],
-        description: 'a sample test'
+        description: 'a sample test',
     },
 ];
 

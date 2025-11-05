@@ -1,5 +1,5 @@
 /* 1926a. nearest exit from entrance in maze */
-// @: graph + bfs
+// @: bfs
 
 import { Queue } from "datastructures-js";
 

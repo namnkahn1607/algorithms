@@ -24,6 +24,6 @@ describe('Dijkstra', () => {
             const algorithm = new Dijkstra();
 
             expect(algorithm.shortestPath(N, edges, src)).toEqual(output);
-        })
-    })
+        });
+    });
 });
