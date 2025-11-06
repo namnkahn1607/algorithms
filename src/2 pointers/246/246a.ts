@@ -19,9 +19,7 @@ class A {
             }
         }
 
-        astr.splice(i + 1);
-
-        return astr;
+        return astr.slice(0, i + 1);
     }
 }
 

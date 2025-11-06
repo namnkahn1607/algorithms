@@ -1,13 +1,12 @@
 /* advanced algorithms: A* Search */
-// @: standard tolerance
+
 import { MinPriorityQueue } from "datastructures-js";
 
 class Astar {
     shortestPath(grid: number[][], allowDiagonal: boolean = false): number {
         const N = grid.length;
-        const dirs = allowDiagonal
-            ? [0, 1, 0, -1, 0, 1, 1, -1, -1, 1]
-            : [0, 1, 0, -1, 0];
+        const dirs = allowDiagonal ?
+            [0, 1, 0, -1, 0, 1, 1, -1, -1, 1] : [0, 1, 0, -1, 0];
 
         const maxDirs = allowDiagonal ? 9 : 4;
 

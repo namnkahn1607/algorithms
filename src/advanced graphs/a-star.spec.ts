@@ -3,10 +3,6 @@
 import { describe, expect, it } from "vitest";
 import { Astar } from "./a-star";
 
-const approaches = [
-    { implementation: new Astar() },
-];
-
 const testCases = [
     {
         allowDiagonal: false,
@@ -42,14 +38,12 @@ const testCases = [
     },
 ];
 
-approaches.forEach(({ implementation }) => {
-    describe('A* Search Test', () => {
-        testCases.forEach(({ allowDiagonal, grid, output, description }) => {
-            it(description, () => {
-                const dist = implementation.shortestPath(grid, allowDiagonal);
+describe('A* Search Test', () => {
+    testCases.forEach(({ allowDiagonal, grid, output, description }) => {
+        it(description, () => {
+            const ans = new Astar().shortestPath(grid, allowDiagonal);
 
-                expect(dist).toEqual(output);
-            });
+            expect(ans).toEqual(output);
         });
     });
 });

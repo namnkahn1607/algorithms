@@ -1,4 +1,4 @@
-/* algorithms: Dijkstra */
+/* advanced algorithms: Dijkstra */
 
 import { MinPriorityQueue } from "datastructures-js";
 
@@ -15,13 +15,13 @@ class Dijkstra {
         for (const [u, v, w] of edges)
             adj.get(u)!.push([v, w]);
 
-        const minHeap = new MinPriorityQueue<number[]>(
+        const minPQ = new MinPriorityQueue<number[]>(
             item => item[0]
         );
-        minHeap.enqueue([0, src]);
+        minPQ.enqueue([0, src]);
 
-        while (!minHeap.isEmpty()) {
-            const [w1, n1] = minHeap.dequeue()!;
+        while (!minPQ.isEmpty()) {
+            const [w1, n1] = minPQ.dequeue()!;
 
             if (dist.get(n1)! !== -1)
                 continue;
@@ -30,7 +30,7 @@ class Dijkstra {
 
             for (const [n2, w2] of adj.get(n1)!) {
                 if (dist.get(n2)! === -1)
-                    minHeap.enqueue([w1 + w2, n2]);
+                    minPQ.enqueue([w1 + w2, n2]);
             }
         }
 

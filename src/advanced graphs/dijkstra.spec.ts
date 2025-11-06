@@ -1,4 +1,4 @@
-/* algorithms test: Dijkstra */
+/* advanced algorithms test: Dijkstra */
 
 import { describe, expect, it } from "vitest";
 import { Dijkstra } from "./dijkstra";
@@ -18,12 +18,12 @@ const testCases = [
     },
 ];
 
-describe('Dijkstra', () => {
+describe('Dijkstra Test', () => {
     testCases.forEach(({ N, edges, src, output, description }) => {
         it(description, () => {
-            const algorithm = new Dijkstra();
+            const ans = new Dijkstra().shortestPath(N, edges, src);
 
-            expect(algorithm.shortestPath(N, edges, src)).toEqual(output);
+            expect(ans).toEqual(output);
         });
     });
 });
