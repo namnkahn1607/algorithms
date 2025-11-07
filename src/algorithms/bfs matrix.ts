@@ -1,6 +1,6 @@
 /* algorithms: BFS on matrix */
-// shortest path length from top left to bottom right
-import { Queue } from "datastructures-js";
+
+import { Queue } from 'datastructures-js';
 
 class BFS {
     shortestPath(grid: number[][]): number {

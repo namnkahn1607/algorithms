@@ -1,7 +1,8 @@
-/* advanced algorithms test: Prim */
+/* advanced algorithms test: Kruskal & Prim */
 
 import { describe, expect, it } from 'vitest';
 import { Prim } from './prim';
+import { Kruskal } from './kruskal';
 
 const testCases = [
     {
@@ -28,10 +29,23 @@ const testCases = [
     },
 ];
 
+describe('Kruskal Test', () => {
+    testCases.forEach(({ n, edges, output, description }) => {
+        it(description, () => {
+            const ans = new Kruskal().minimumSpanningTree(n, edges);
+
+            const cmp = (a: number, b: number) => a - b;
+
+            expect(ans.sort(cmp)).toEqual(output.sort(cmp));
+        });
+    });
+});
+
 describe('Prim Test', () => {
     testCases.forEach(({ n, edges, output, description }) => {
         it(description, () => {
             const ans = new Prim().minimumSpanningTree(n, edges);
+
             const cmp = (a: number, b: number) => a - b;
 
             expect(ans.sort(cmp)).toEqual(output.sort(cmp));

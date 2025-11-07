@@ -1,7 +1,7 @@
 /* advanced algorithms test: A* Search */
 
-import { describe, expect, it } from "vitest";
-import { Astar } from "./a-star";
+import { describe, expect, it } from 'vitest';
+import { Astar } from './a-star';
 
 const testCases = [
     {

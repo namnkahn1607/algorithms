@@ -1,6 +1,6 @@
 /* 169b. majority element */
 // @: randomization
-import _ from "lodash";
+import _ from 'lodash';
 
 class B {
     majorityElement(arr: number[]): number {

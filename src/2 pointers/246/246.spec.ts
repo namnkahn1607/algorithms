@@ -1,8 +1,8 @@
 /* 246. asteroid collision */
 
-import { describe, expect, it } from "vitest";
-import { A } from "./246a";
-import { B } from "./246b";
+import { describe, expect, it } from 'vitest';
+import { A } from './246a';
+import { B } from './246b';
 
 const approaches = [
     { solution: new A() }, { solution: new B() }

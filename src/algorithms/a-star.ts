@@ -1,6 +1,6 @@
 /* advanced algorithms: A* Search */
 
-import { MinPriorityQueue } from "datastructures-js";
+import { MinPriorityQueue } from 'datastructures-js';
 
 class Astar {
     shortestPath(grid: number[][], allowDiagonal: boolean = false): number {

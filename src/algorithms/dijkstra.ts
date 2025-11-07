@@ -1,6 +1,6 @@
 /* advanced algorithms: Dijkstra */
 
-import { MinPriorityQueue } from "datastructures-js";
+import { MinPriorityQueue } from 'datastructures-js';
 
 class Dijkstra {
     shortestPath(N: number, edges: number[][], src: number): Map<number, number> {

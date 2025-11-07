@@ -1,7 +1,7 @@
 /* advanced algorithms test: Dijkstra */
 
-import { describe, expect, it } from "vitest";
-import { Dijkstra } from "./dijkstra";
+import { describe, expect, it } from 'vitest';
+import { Dijkstra } from './dijkstra';
 
 const testCases = [
     {

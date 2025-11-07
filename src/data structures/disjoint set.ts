@@ -43,20 +43,6 @@ class DisjointSet {
 
         return true;
     }
-
-    public static run(): void {
-        const ans = [];
-        const fig = new DisjointSet(10);
-        const args = [
-            [1, 3], [1, 2], [2, 3], [1, 3]
-        ];
-
-        for (const [x, y] of args) {
-            ans.push(fig.union(x, y));
-        }
-
-        console.log(ans);
-    }
 }
 
-DisjointSet.run();
+export { DisjointSet };

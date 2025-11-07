@@ -1,5 +1,4 @@
 /* algorithms: DFS on matrix */
-// count the number of unique paths from top left to bottom right
 
 class DFS {
     countPaths(grid: number[][]): number {

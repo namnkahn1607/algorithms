@@ -1,4 +1,4 @@
-/* data structures: Heap */
+/* data structures test: Heap */
 
 import { describe, expect, it } from "vitest";
 import { MaxHeap } from "./max heap";
@@ -43,7 +43,7 @@ const testCases = [
     },
 ];
 
-describe("Heap Data Structure", () => {
+describe("MaxHeap & MinHeap Test", () => {
     testCases.forEach(({ nums, k, kLargest, kSmallest, description }) => {
         it(description, () => {
             const ans1 = runner.kLargest(nums, k);
