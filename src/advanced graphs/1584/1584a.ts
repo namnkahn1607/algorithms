@@ -1,6 +1,6 @@
 /* 1584a. min cost to connect points */
 // @: prim
-import { MinPriorityQueue } from "datastructures-js";
+import { MinPriorityQueue } from 'datastructures-js';
 
 class A {
     minCostConnectPoints(points: number[][]): number {
