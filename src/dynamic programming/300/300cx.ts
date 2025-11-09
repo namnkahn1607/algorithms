@@ -1,0 +1,1 @@
+// segment tree: https://neetcode.io/solutions/longest-increasing-subsequence
