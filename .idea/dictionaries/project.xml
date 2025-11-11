@@ -10,6 +10,8 @@
       <w>llist</w>
       <w>spfa</w>
       <w>tmps</w>
+      <w>topologicable</w>
+      <w>undigraph</w>
     </words>
   </dictionary>
 </component>
