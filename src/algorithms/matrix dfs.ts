@@ -1,6 +1,6 @@
 /* algorithms: DFS on matrix */
 
-class DFS {
+class MatrixDFS {
     countPaths(grid: number[][]): number {
         const [row, col] = [grid.length, grid[0].length];
         const dirs = [[0, -1], [-1, 0], [0, 1], [1, 0]];
@@ -28,4 +28,4 @@ class DFS {
     }
 }
 
-export { DFS };
+export { MatrixDFS };

@@ -1,7 +1,7 @@
-/* 207a. course schedule */
-// @: 3-color cycle detection
+/* 207b. course schedule */
+// @: topological sort
 
-class A {
+class B {
     canFinish(numCourses: number, prerequisites: number[][]): boolean {
         const adj = Array.from(
             { length: numCourses }, () => new Array<number>()
@@ -11,26 +11,28 @@ class A {
             adj[src].push(dst);
         }
 
-        const colors = new Array(numCourses).fill(0);
+        const onPath = new Array(numCourses).fill(false);
+        const visited = new Array(numCourses).fill(false);
 
         const dfs = (curr: number): boolean => {
-            if (colors[curr] === 1) return true;
-            if (colors[curr] === 2) return false;
-
-            colors[curr] = 1;
+            onPath[curr] = true;
+            visited[curr] = true;
 
             for (const nei of adj[curr]) {
-                if (dfs(nei)) {
-                    return true;
+                if (onPath[nei]) return false;
+                if (visited[nei]) continue;
+
+                if (!dfs(nei)) {
+                    return false;
                 }
             }
 
-            colors[curr] = 2;
-            return false;
+            onPath[curr] = false;
+            return true;
         };
 
         for (let i = 0; i < numCourses; ++i) {
-            if (dfs(i)) {
+            if (!visited[i] && !dfs(i)) {
                 return false;
             }
         }
@@ -39,4 +41,4 @@ class A {
     }
 }
 
-export { A };
+export { B };

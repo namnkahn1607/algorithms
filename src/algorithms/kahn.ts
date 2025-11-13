@@ -13,10 +13,9 @@ class Topological {
         }
 
         const ans: number[] = [];
-        const onPath = new Array<boolean>(n)
-            .fill(false);
-        const visited = new Array<boolean>(n)
-            .fill(false);
+        
+        const onPath = new Array(n).fill(false);
+        const visited = new Array(n).fill(false);
 
         const dfs = (curr: number): boolean => {
             onPath[curr] = true;
@@ -50,8 +49,7 @@ class Topological {
         const adj = Array.from(
             { length: n }, () => new Array<number>()
         );
-        const indegree = new Array<number>(n)
-            .fill(0);
+        const indegree = new Array(n).fill(0);
 
         for (const [src, dst] of edges) {
             adj[src].push(dst);

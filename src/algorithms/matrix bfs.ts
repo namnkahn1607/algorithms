@@ -2,7 +2,7 @@
 
 import { Queue } from 'datastructures-js';
 
-class BFS {
+class MatrixBFS {
     shortestPath(grid: number[][]): number {
         const [row, col] = [grid.length, grid[0].length];
         const dirs = [[0, -1], [-1, 0], [0, 1], [1, 0]];
@@ -37,4 +37,4 @@ class BFS {
     }
 }
 
-export { BFS };
+export { MatrixBFS };

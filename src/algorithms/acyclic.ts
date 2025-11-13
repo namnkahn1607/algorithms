@@ -1,4 +1,4 @@
-/* advanced algorithms: Graph Cycle Detection */
+/* algorithms: Graph Cycle Detection */
 
 class Acyclic {
     notAcyclic(n: number, edges: number[][]): boolean {
@@ -10,10 +10,8 @@ class Acyclic {
             adj[src].push(dst);
         }
 
-        const visited = new Array<boolean>(n)
-            .fill(false);
-        const onPath = new Array<boolean>(n)
-            .fill(false);
+        const visited = new Array(n).fill(false);
+        const onPath = new Array(n).fill(false);
 
         const dfs = (curr: number): boolean => {
             onPath[curr] = true;
@@ -50,8 +48,7 @@ class Acyclic {
             adj[src].push(dst);
         }
 
-        const visited = new Array<boolean>(n)
-            .fill(false);
+        const visited = new Array(n).fill(false);
 
         const dfs = (curr: number, par: number): boolean => {
             visited[curr] = true;
