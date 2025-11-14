@@ -1,68 +1,48 @@
-/* 1584. min cost to connect points */
-// @: prim 
-
+/* 246a. asteroid collision */
+// @: 2 pointers + dp
 #include <iostream>
-#include <algorithm>
 #include <vector>
-#include <functional>
-#include <cmath>
-#include <queue>
 using namespace std;
 
 class A {
 public:
-    int minCostConnectPoints(vector<vector<int>> points) {
-        function<int(int, int)> distance = [&](int i, int j) -> int {
-            return abs(points[i][0] - points[j][0]) +
-                abs(points[i][1] - points[j][1]);
-        };
+    const vector<int> asteroidCollision(vector<int> astr) {
+        int i = -1;
+        
+        for (int &a : astr) {
+            while (i >= 0 and a < 0 && astr[i] > 0) {
+                const int diff = astr[i] + a;
 
-        const int N = points.size();
-        vector<bool> visited(N, false); 
-        int cost = 0;
+                if (diff > 0) { a == 0; break; }
+                if (diff == 0) { a = 0; --i; break; }
 
-        using Edge = pair<int, int>; 
-        priority_queue<Edge, vector<Edge>, greater<Edge>> minPQ;
-        minPQ.push({0, 0});
+                --i;
+            }
 
-        while (!minPQ.empty()) {
-            Edge currEdge = minPQ.top(); minPQ.pop();
-
-            const int dist = currEdge.first;
-            const int i = currEdge.second;
-
-            if (visited[i]) continue;
-
-            cost += dist;
-            
-            visited[i] = true;
-
-            for (int j = 0; j < N; ++j) {
-                if (!visited[j]) {
-                    minPQ.push({distance(i, j), j});
-                }
+            if (a != 0) {
+                astr[++i] = a;
             }
         }
 
-        return cost;
+        return astr.resize(i + 1);
     }
-};
+}
 
 int main() {
-    // add points
+    // add asteroids
     int n; cin >> n;
-    vector<vector<int>> points;
-    int x, y;
+    vector<int> astr(n);
 
     for (int i = 0; i < n; ++i) {
-        cin >> x >> y;
-        points.push_back({x, y});
+        cin >> astr[i];
     }
 
-    // min cost to connect all points
-    A* solution = new A();
-    cout << solution->minCostConnectPoints(points) << endl;
-    delete solution;
+    // asteroids after collision
+    const vector<int> ans = new A()->asteroidCollision(astr);
+
+    for (const int& x : ans) {
+        cout << x << ' '; 
+    }
 
     return 0;
 }
