@@ -3,7 +3,7 @@
 import { MinPriorityQueue } from 'datastructures-js';
 
 class Astar {
-    shortestPath(grid: number[][], allowDiagonal: boolean = false): number {
+    shortestPath(grid: Array<Array<number>>, allowDiagonal: boolean = false): number {
         const N = grid.length;
         const dirs = allowDiagonal ?
             [0, 1, 0, -1, 0, 1, 1, -1, -1, 1] : [0, 1, 0, -1, 0];

@@ -8,16 +8,16 @@
       <w>cout</w>
       <w>deadends</w>
       <w>heapify</w>
-      <w>heirholzer</w>
-      <w>heirholzer's</w>
+      <w>hierholzer</w>
+      <w>indeg</w>
       <w>iostream</w>
       <w>llist</w>
+      <w>outdeg</w>
       <w>preq</w>
       <w>spfa</w>
       <w>tmps</w>
       <w>topologicable</w>
       <w>undigraph</w>
-      <w>undiraph</w>
     </words>
   </dictionary>
 </component>

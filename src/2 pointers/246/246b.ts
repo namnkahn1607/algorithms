@@ -3,7 +3,7 @@
 import { Stack } from "datastructures-js";
 
 class B {
-    asteroidCollision(astr: number[]): number[] {
+    asteroidCollision(astr: Array<number>): Array<number> {
         const stack = new Stack<number>();
 
         for (let a of astr) {

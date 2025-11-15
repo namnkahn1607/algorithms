@@ -2,7 +2,7 @@
 // @: 2 pointers + dp
 
 class A {
-    asteroidCollision(astr: number[]): number[] {
+    asteroidCollision(astr: Array<number>): Array<number> {
         let i = -1;
 
         for (let a of astr) {
